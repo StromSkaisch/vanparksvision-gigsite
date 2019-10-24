@@ -48,35 +48,72 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+/* Body Copy */
+p {	
+font-family: Didact Gothic;
+font-style: normal;
+font-weight: normal;
+font-size: 2em;
+line-height: 2.2em;
+letter-spacing: 0.01em; 
+}
+/*Anchor links*/
+a:link{
+font-family: Didact Gothic;
+font-style: normal;
+font-weight: normal;
+font-size: 2em;
+line-height: 2.2em;
+letter-spacing: 0.01em;          
+color: #3573B3;
+}
+a:visited {
+  color:#99CF6A;
+}
+/*headings*/
+h1 {
+font-family: Tw Cen MT;
+font-style: normal;
+font-weight: bold;
+font-size: 7.5em;
+line-height: 2;
+}
+h2 {
+font-family: Tw Cen MT;
+font-style: normal;
+font-weight: bold;
+font-size: 5em;
+line-height: 2;
+}
+h3 {
+font-family: Tw Cen MT;
+font-style: normal;
+font-weight: bold;
+font-size: 4em;
+line-height: 2;
+}
+h4 {
+font-family: Tw Cen MT;
+font-style: normal;
+font-weight: bold;
+font-size: 2.5em;
+line-height: 2;
+}
+h5 {
+font-family: Tw Cen MT;
+font-style: normal;
+font-weight: bold;
+font-size: 2em;
+line-height: 2;
+}
 
 /* Navigation */
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  opacity: 0.5;
+nav{
+	position: fixed;
+	
 }
 
-li {
-  float: right;
-}
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #111;
-}
 
 /* Hero Unit */
 

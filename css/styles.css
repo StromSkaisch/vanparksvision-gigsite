@@ -197,10 +197,75 @@ padding:1%;
 	padding:10% 0 0 0;
 	
 }
-
+.nav-acc{
+		display:none;
+	}
 
 /* Hero Unit */
 
 /* Main Content */
 
 /* Footer */
+/*Mobile media Query*/
+@media only screen and (max-width: 501px)
+{
+nav{
+	position: fixed;
+	max-height: 106px;
+	width:100%;
+	grid-template-columns: .5fr 4fr .5fr 1fr .5fr;
+	grid-template-rows:1fr 1fr;
+	grid-template-areas:". imglogo . acc ."
+					    ". imglogo . acc . ";
+	background-color: #FFFFFF;
+	margin: auto;
+}	
+.nav-acc {
+		grid-area:acc;
+		height:100%;
+		width: auto;
+		max-height:50px;
+		margin:auto;
+}
+	
+	.nav-link{
+display:none;
+
+}
+	.nav-link-img{
+	grid-area:imglogo;
+	margin:auto;
+	
+}
+.nav-link-about{
+	display: none;
+	
+}
+.nav-link-faq{
+	display: none;
+	
+}
+.nav-link-contact{
+	display: none;
+	
+}
+.nav-link-team{
+	display: none;
+	
+}
+.nav-link-casestudy{
+	display: none;
+	
+}
+.nav-button{
+	display: none;
+}
+.nav-acc {
+		display:block;
+		grid-area:acc;
+		height:100%;
+		max-height:50px;
+		margin:auto;
+	}
+
+}

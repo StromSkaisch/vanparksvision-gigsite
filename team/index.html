@@ -9,12 +9,13 @@
 
     <link type='text/css' rel='stylesheet' href='../css/styles.css'>
     <link type='text/css' rel='stylesheet' href='../css/animate.css-master/animate.css'>
-
+</head>
+	
 <body>
-
+<div class="team-body">
     <!-- Navigation Area -->
-   <nav>
-     		<a class="nav-acc"><img class="nav-acc-img" src="../imgs/accordian.png"></a>
+   <nav>	
+     		<a class="nav-acc" ><button class="nav" onclick="accOpen()">☰</button> </a>
             <a class="nav-link-img" href='../index.html'><img class="nav-img-logo" src="../imgs/logo.png"></a>
             <a class="nav-link-about nav-link" href='../about/index.html'>About</a>
 			<a class="nav-link-faq nav-link" href='../faq/index.html'>Faq</a>
@@ -24,7 +25,13 @@
             <button class="nav-button"><a class="nav-button-text"  href="../download/index.html">Download</a></button>
        		
     </nav>
-
+	<!-- Nav Modal Area -->
+	<div  style="display:none" id="navModal">
+  <button onclick="accClose()" class="close"> &times;</button>
+  <a href="#" class="modal-link-download">Download</a>
+  <a href="#" class="modal-link-about">About</a>
+  <a href="#" class="modal-link-contact">Contact</a>
+</div>
     <!-- Header/Hero Unit Area -->
      <div class='hero-unit'>
         <div class='hero-content'>
@@ -40,7 +47,31 @@
 
     <!-- Footer Area -->
     <footer>
-	
+		<a class="footer-link-img" href='../index.html'><img class="footer-img-logo" src="../imgs/logo.png"></a>
+        <a class="footer-link-home footer-link" href='../index.html'>Home</a>
+		<a class="footer-link-about footer-link" href='../about/index.html'>About</a>
+		<a class="footer-link-faq footer-link" href='../faq/index.html'>Faq</a>
+        <a class="footer-link-contact footer-link" href='../contact/index.html'>Contact</a>
+	    <a class="footer-link-team footer-link" href='../team/index.html'>Team</a>
+		<a class="footer-link-casestudy footer-link" href='../casestudy/index.html'>Case Study</a>
+		<a class="footer-link-privacy footer-link" href='../privacypolicy/index.html'>Privacy Policy</a>
     </footer>
-</body>
+</div><!-- end of team-body -->
+	
+	<script>
+function accOpen() {
+  document.getElementById("navModal").style.width = "100%";
+  document.getElementById("navModal").style.display = "block";
+}
+
+function accClose() {
+  document.getElementById("navModal").style.display = "none";
+}
+</script>
+	
+	
+	
+	
+	
+	</body>
 </html>

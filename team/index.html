@@ -15,7 +15,7 @@
 <div class="team-body">
     <!-- Navigation Area -->
    <nav>	
-     		<a class="nav-acc" ><button class="nav" onclick="accOpen()">☰</button> </a>
+     		<a class="nav-acc" ><button class="acc" onclick="accOpen()">☰</button> </a>
             <a class="nav-link-img" href='../index.html'><img class="nav-img-logo" src="../imgs/logo.png"></a>
             <a class="nav-link-about nav-link" href='../about/index.html'>About</a>
 			<a class="nav-link-faq nav-link" href='../faq/index.html'>Faq</a>
@@ -26,11 +26,15 @@
        		
     </nav>
 	<!-- Nav Modal Area -->
-	<div  style="display:none" id="navModal">
+<div  style="display:none" id="navModal">
   <button onclick="accClose()" class="close"> &times;</button>
-  <a href="#" class="modal-link-download">Download</a>
-  <a href="#" class="modal-link-about">About</a>
-  <a href="#" class="modal-link-contact">Contact</a>
+  <a href="../download/index.html" class="modal-link modal-link-download">Download</a>
+  <a href="../about/index.html" class="modal-link modal-link-about">About</a>
+  <a href="../faq/index.html" class="modal-link modal-link-faq">FAQ</a>
+  <a href="../contact/index.html" class="modal-link modal-link-contact">Contact</a>
+  <a href="../team/index.html" class="modal-link modal-link-team">Team</a>
+  <a href="../casestudy/index.html" class="modal-link modal-link-case">Case Study</a>
+  <a class="modal-link-img" href='../index.html'><img class="modal-img-logo" src="../imgs/logo.png"></a>
 </div>
     <!-- Header/Hero Unit Area -->
      <div class='hero-unit'>
@@ -61,11 +65,17 @@
 	<script>
 function accOpen() {
   document.getElementById("navModal").style.width = "100%";
-  document.getElementById("navModal").style.display = "block";
+  document.getElementById("navModal").style.display = "grid";
 }
 
 function accClose() {
   document.getElementById("navModal").style.display = "none";
+}
+		
+function colorModal(){
+	let page = window.location.href;
+	let link = document.getElementsByClassName("modal-link");
+	
 }
 </script>
 	

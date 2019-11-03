@@ -200,6 +200,13 @@ padding:1%;
 .nav-acc{
 		display:none;
 	}
+.acc{
+	border:none;
+	background:none;
+	font-size: 4em;
+	color: #004883;
+	
+}
 .team-body{
 	display:grid;
 	height:100%;
@@ -215,6 +222,70 @@ padding:1%;
 	background: #FFFFFF;
 	height:100%;
 	position: fixed !important;
+	
+	grid-template-areas: ". close . ."
+						 ". . . mdownload"
+						 ". . . mabout"
+						 ". . . mfaq"
+						 ". . . mcontact"
+						 ". . . mteam"
+					     ". . . mcase"
+						 ". . . mlogo";
+	grid-template-columns: .2fr .2fr .8fr 2.8fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 3fr;
+	max-height:784px;
+	
+}
+.modal-link{
+font-family: Tw Cen MT;
+font-style: normal;
+font-size: 2.5em;
+line-height: 1.5;
+color:black;
+text-decoration: none;
+display:block;
+padding:0% 5% 0% 0%;
+text-align: right;
+
+
+}
+.modal-link-img{
+	grid-area: mlogo
+}
+.modal-img-logo{
+	max-height:90px;
+	max-width: 90px;
+	margin:auto;
+	width: auto;
+	padding: 5%;
+	
+}
+.close{
+	grid-area:close;
+	border:none;
+	background:none;
+	font-size: 4em;
+}
+.modal-link-download{
+	grid-area: mdownload;
+}
+.modal-link-about{
+	grid-area: mabout;
+}
+.modal-link-faq{
+	grid-area: mfaq;
+}
+.modal-link-contact{
+	grid-area: mcontact;
+}
+.modal-link-team{
+	grid-area: mteam;
+}
+.modal-link-case{
+	grid-area: mcase;
+}
+.modal-color-green{
+	background: rgba(80, 128, 61, 0.5);
 }
 /* Hero Unit */
 
@@ -348,7 +419,7 @@ nav{
 		grid-area:acc;
 		height:100%;
 		width:auto;
-		max-height:50px;
+		max-height:70px;
 		margin:auto;
 }
 	

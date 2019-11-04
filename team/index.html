@@ -7,21 +7,35 @@
 
     <title>VanParksVision</title>
 
-    <link type='text/css' rel='stylesheet' href='css/styles.css'>
-    <link type='text/css' rel='stylesheet' href='css/animate.css-master/animate.css'>
-
+    <link type='text/css' rel='stylesheet' href='../css/styles.css'>
+    <link type='text/css' rel='stylesheet' href='../css/animate.css-master/animate.css'>
+</head>
+	
 <body>
-
+<div class="team-body">
     <!-- Navigation Area -->
-    <nav>
-        <ul>
-            <li class='left'><a href='index.html'><img src='vanparkstitle-placeholder'></a></li> <!-- Title Image/Text -->
-            <li><a href='about/index.html'>About</a></li>
-            <li><a href='contact/index.html'>Contact</a></li>
-            <li><a href='download/index.html'>Download</a></li>
-        </ul>
+   <nav>	
+     		<a class="nav-acc" ><button class="acc" onclick="accOpen()">☰</button> </a>
+            <a class="nav-link-img" href='../index.html'><img class="nav-img-logo" src="../imgs/logo.png"></a>
+            <a class="nav-link-about nav-link" href='../about/index.html'>About</a>
+			<a class="nav-link-faq nav-link" href='../faq/index.html'>Faq</a>
+            <a class="nav-link-contact nav-link" href='../contact/index.html'>Contact</a>
+			<a class="nav-link-team nav-link" href='../team/index.html'>Team</a>
+			<a class="nav-link-casestudy nav-link" href='../casestudy/index.html'>Case Study</a>
+            <button class="nav-button"><a class="nav-button-text"  href="../download/index.html">Download</a></button>
+       		
     </nav>
-
+	<!-- Nav Modal Area -->
+<div  style="display:none" id="navModal">
+  <button onclick="accClose()" class="close"> &times;</button>
+  <a href="../download/index.html" class="modal-link modal-link-download">Download</a>
+  <a href="../about/index.html" class="modal-link modal-link-about">About</a>
+  <a href="../faq/index.html" class="modal-link modal-link-faq">FAQ</a>
+  <a href="../contact/index.html" class="modal-link modal-link-contact">Contact</a>
+  <a href="../team/index.html" class="modal-link modal-link-team">Team</a>
+  <a href="../casestudy/index.html" class="modal-link modal-link-case">Case Study</a>
+  <a class="modal-link-img" href='../index.html'><img class="modal-img-logo" src="../imgs/logo.png"></a>
+</div>
     <!-- Header/Hero Unit Area -->
      <div class='hero-unit'>
         <div class='hero-content'>
@@ -37,6 +51,37 @@
 
     <!-- Footer Area -->
     <footer>
+		<a class="footer-link-img" href='../index.html'><img class="footer-img-logo" src="../imgs/logo.png"></a>
+        <a class="footer-link-home footer-link" href='../index.html'>Home</a>
+		<a class="footer-link-about footer-link" href='../about/index.html'>About</a>
+		<a class="footer-link-faq footer-link" href='../faq/index.html'>Faq</a>
+        <a class="footer-link-contact footer-link" href='../contact/index.html'>Contact</a>
+	    <a class="footer-link-team footer-link" href='../team/index.html'>Team</a>
+		<a class="footer-link-casestudy footer-link" href='../casestudy/index.html'>Case Study</a>
+		<a class="footer-link-privacy footer-link" href='../privacypolicy/index.html'>Privacy Policy</a>
     </footer>
-</body>
+</div><!-- end of team-body -->
+	
+	<script>
+function accOpen() {
+  document.getElementById("navModal").style.width = "100%";
+  document.getElementById("navModal").style.display = "grid";
+}
+
+function accClose() {
+  document.getElementById("navModal").style.display = "none";
+}
+		
+function colorModal(){
+	let page = window.location.href;
+	let link = document.getElementsByClassName("modal-link");
+	
+}
+</script>
+	
+	
+	
+	
+	
+	</body>
 </html>

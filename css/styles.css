@@ -1,3 +1,4 @@
+
 /* Universal */
 
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -80,18 +81,147 @@ li a:hover {
 
 /* Hero Unit */
 /* hero image/video */
-.hero-unit{
-    grid-area: hero;
+body {
+		font-family: 'Didact Gothic', serif;
+		font-size: 1.25em;
+		color: #000000;
+		padding: 1%;
+		margin: 2% auto;
+
+		}
+h1 {
+	font-family: "Tw Cen MT", Book Antiqua, sans-serif;
+	font-size: 2em;
+	font-weight: bold;
+}
+h2 {
+	font-family: "Tw Cen MT", Book Antiqua, sans-serif;
+	font-size: 1.75em;
+	font-weight: bold;
+}
+span {
+	font-style: italic;
+	}
+
+button {
+	background: #7FB069;
+	border-radius: 5px;
+	color: white;
+	margin:  auto;
+	padding: 1%;
+	}
+
+a:link, a:visited {
+	background: #7FB069;
+	border-radius: 5px;
+	color: white;
+	margin: 2% auto;
+	padding: 1%;
+	text-decoration: none;
+	}
+
+.home-imagebox {
+	grid-area: image;
+	display: block;
+	margin: auto;
+	max-width: 600px;
+
+		}
+
+.home-imagebox img {
+	width: 100%;
+
+		}
+
+.home-hero-unit{
+	grid-area: hero;
+	background-image: url("img/backofswings.png");
+	background-size: cover;
+   	color: white;
     width: 100%;
-    background-image: url("backofswings.png");
+
     background-color: rgba(0, 0, 0, 0.3);
     color: white;
     text-align: left;
+    padding: 10% 2%;
+    margin: 10% auto;
 }
+.home-hero-content {
+	background-image: url("backofswings.png");
+	padding: 2%;
+}
+
 /* Main Content */
-.main {
-    grid area: main;
+.home-main {
+		width: 100%;
+		margin:  auto;
+		padding: 1%;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 1em;
+   		width: 100%;
+    	text-align: left;
+    	grid-gap: 2%;
 
 
-}
+	}
+
+		.home-block1 {
+			display: block;
+			margin: 1% auto;
+			padding: 1%;
+			}
+
+		.home-block2 {
+			padding: 2%;
+			margin: 2% auto;
+		}
+
+		.home-block3 {
+			padding: 2%;
+			margin: 2% auto;
+		}
+
+		.home-block4 {
+			padding: 2%;
+			margin: 2% auto;
+		}
+
 /* Footer */
+
+/* tablet styles */
+	@media only screen and (min-width: 550px) and (max-width: 700px) {
+
+	.home-main{
+		margin: 2% auto;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 2%;
+		grid-template-areas:
+
+		"block1 image1"
+		"image2 block2"
+		"block3 image3"
+		"image4 block4";
+	}
+
+	}
+
+	/* desktop styles */
+	@media only screen and (min-width: 701px) {
+
+	.home-main {
+		margin: 2% auto;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 2%;
+		grid-template-areas:
+
+		"block1 image1"
+		"image2 block2"
+		"block3 image3"
+		"image4 block4";
+	}
+}
+
+

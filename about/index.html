@@ -3,84 +3,90 @@
 <head>
     <meta charset='utf-8'>
 
-    <meta name='home' content='home-page' initial-scale='1'>
+    <meta name="viewport" content="width=device-width" initial-scale="1">
 
     <title>VanParksVision</title>
 
-    <link type='text/css' rel='stylesheet' href='css/styles.css'>
-    <link type='text/css' rel='stylesheet' href='css/animate.css-master/animate.css'>
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link type='text' rel='stylesheet' href='../css/animate.css-master/animate.css'>
+    <link type='text/css' rel='stylesheet' href='../css/styles.css'>
+</head>
 <body class='about-body'>
 
     <!-- Navigation Area -->
-    <nav>
-        <ul>
-            <li><a href='../index.html'><img src='vanparkstitle-placeholder'></a></li> <!-- Title Image/Text -->
-            <li><a href='../about/index.html'>About</a></li>
-            <li><a href='../faq/index.html'>FAQ</a></li>
-            <li><a href='../contact/index.html'>Contact</a></li>
-            <li><a href='../team/index.html'>Credits</a></li>
-            <li><a href='../casestudy/'>Case Study</a></li>
-            <li><a href='../download/index.html'><button class='button-download'>Download</button></a></li>
-        </ul>
+    <nav class='about-nav'>
+        <div class='about-navigation-list'>
+            <a class='about-navigation-list-logo' href='../index.html'><img src='../img/about-logo-draft.png'></a> <!-- Title Image/Text -->
+            <div class='about-navigation-list-item'></div>
+            <div class='about-navigation-list-item'></div>
+            <div class='about-navigation-list-item'></div>
+            <div class='about-navigation-list-item'></div>
+            <div class='about-navigation-list-item'></div>
+            <div class='about-navigation-list-item'></div>
+            <div class='about-navigation-list-item'></div>
+            <div class='about-navigation-list-item'></div>
+            <div class='about-navigation-list-item'></div>
+            <a class='about-navigation-list-item' href='../about/index.html'>About</a>
+            <a class='about-navigation-list-item' href='../faq/index.html'>FAQ</a>
+            <a class='about-navigation-list-item' href='../contact/index.html'>Contact</a>
+            <a class='about-navigation-list-item' href='../team/index.html'>Credits</a>
+            <a class='about-navigation-list-item' href='../casestudy/'>Case Study</a>
+            <a class='about-navigation-list-download' href='../download/index.html'><button class='about-button-download'>Download</button></a>
+        </div>
     </nav>
 
     <!-- Header/Hero Unit Area -->
-    <div class='about-hero-unit'>
-        <div class='about-hero-overlay'>
+    <header class='about-unit-hero'>
+        <div class='about-text-hero'>
             <h1>About</h1>
             <p class='subtitle'>Find out about the app and the features within.</p>
-            <button class='button-hero'></button>
         </div>
-    </div>
+        <a data-scroll href='#about-container-content' class='scrollDown scrollToContent'>
+			<span class='glyphicon glyphicon-chevron-down'></span>
+        </a>
+    </header>
 
     <!-- Goal of the app -->
-    <section>
-        <div>
+    <section id='about-container-content'>
+        <div class='about-goal'>
             <h2 class='about-heading-goal'>Goal of the App</h2>
             <p class='about-paragraph-goal'>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
             <p class='about-paragraph-goal'>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
             <p class='about-paragraph-goal'>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment. Bring to the table win-win survival strategies to ensure proactive domination.</p>
         </div>
-        <div><svg width="260" height="260" viewBox="0 0 260 260" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="130" cy="130" r="130" fill="#99CF6A" fill-opacity="0.55"/>
+        <div class='about-placeholder'>
+            <svg width="260" height="260" viewBox="0 0 260 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="130" cy="130" r="130" fill="#99CF6A" fill-opacity="0.55"/>
             </svg>
         </div>
-    </section>
 
-    <!-- Phone image titles -->
-    <section class='about-section-phonetitles'>
-        <h3 class='about-heading-park'>Find Park Features</h3>
-        <h3 class='about-heading-features'>Locate a Park</h3>
-        <h3 class='about-heading-future'>Imagine the Future</h3>
-    </section>
-
-    <!-- Phone images -->
-    <section class='about-section-phoneimage'>
-        <div class='about-div-phoneimage'><img></div>
-        <div class='about-div-phoneimage'><img></div>
-        <div class='about-div-phoneimage'><img></div>
-    </section>
-
-    <!-- Phone image descriptions -->
-    <section class='about-section-phonedesc'>
-        <p class='about-paragraph-phonedesc'>Short description of image above</p>
-        <p class='about-paragraph-phonedesc'>Short description of image above</p>
-        <p class='about-paragraph-phonedesc'>Short description of image above</p>
+    <!-- Phone image titles, images, and descriptions -->
+        <div class='about-container-park'>
+            <h3 class='about-heading-park'>Locate a Park</h3>
+            <div class='about-div-phoneimage'><img src='../img/about-screenshot-test-park.png'></div>
+            <p class='about-paragraph-phonedesc'>Short description of image above</p>
+        </div>
+        <div class='about-container-features'>
+            <h3 class='about-heading-features'>Find Park Features</h3>
+            <div class='about-div-phoneimage'><img src='../img/about-screenshot-test-features.png'></div>
+            <p class='about-paragraph-phonedesc'>Short description of image above</p>
+        </div>
+        <div class='about-container-future'>
+            <h3 class='about-heading-future'>Imagine the Future</h3>
+            <div class='about-div-phoneimage'><img src='../img/about-screenshot-test-future.png'></div>
+            <p class='about-paragraph-phonedesc'>Short description of image above</p>
+        </div>
     </section>
 
     <!-- Footer Area -->
-    <footer class='about-footer'>
-        <div></div>
-        <div>
-            <ul>
-                <li><a href='../index.html'>Home</li>
-                <li><a href='../about/index.html'>About</a></li>
-                <li><a href='../faq/index.html'>Help</a></li>
-                <li><a href='../team/index.html'>Credits</a></li>
-                <li><a href='../casestudy/'>Privacy Policy</a></li>
-            </ul>
-        </div>
-    </footer>
+    <div class='about-footer'>
+        <div class='about-footer-image'><img src='../img/about-footer-logo.png'></div>
+        <div class='footer-list-item'></div>
+        <div class='footer-list-item'><a href='../index.html'>Home</a></div>
+        <div class='footer-list-item'><a href='../about/index.html'>About</a></div>
+        <div class='footer-list-item'><a href='../faq/index.html'>Help</a></div>
+        <div class='footer-list-item'><a href='../team/index.html'>Credits</a></div>
+        <div class='footer-list-item'><a href='../casestudy/'>Privacy Policy</a></div>
+    </div>
 </body>
 </html>

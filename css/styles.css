@@ -12,13 +12,13 @@ html, body {
 
 /* Navigation */
 
-.about-nav {
+.austin-nav {
   position: fixed;
   width: 100%;
   z-index: 900;
 }
 
-.about-navigation-list {
+.austin-navigation-list {
   display: grid;
   grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
   grid-column-gap: 0%;
@@ -28,12 +28,12 @@ html, body {
   background-color: rgb(255, 255, 255, 1);
 }
 
-.about-navigation-list-logo {
+.austin-navigation-list-logo {
   padding: 0;
   margin: 0 auto;
 }
 
-.about-navigation-list-item {
+.austin-navigation-list-item {
   padding: 48px 0 0 0;
   margin: 0 auto;
   color: #333;
@@ -42,12 +42,12 @@ html, body {
   line-height: 80%;
 }
 
-.about-navigation-list-item:hover {
+.austin-navigation-list-item:hover {
   color: rgb(0, 72, 131);
   text-decoration: none;
 }
 
-.about-navigation-list-download {
+.austin-navigation-list-download {
   padding: 33px 0 0 0;
   margin: 0 auto;
   color: #333;
@@ -56,7 +56,7 @@ html, body {
   line-height: 80%;
 }
 
-.about-button-download {
+.austin-button-download {
   color: white;
   border: none;
   background-color: #7FB069;
@@ -67,28 +67,6 @@ html, body {
 }
 
 /* Hero Unit */
-
-/* About Hero Unit */
-
-.about-unit-hero {
-  background: linear-gradient( rgba(0, 72, 131, 0.5),  rgba(0, 72, 131, 0.5)), url('../img/about-pavilion.jpg') fixed;
-  background-repeat: no-repeat;
-	background-size: cover;
-	height: 100%;
-	width: 100%;
-  margin: 0;
-}
-
-.about-text-hero {
-  text-align: left;
-  position: absolute;
-  width: 95%;
-  top: 45%;
-  left: 40%;
-  transform: translate(-50%, -50%);
-  color: white;
-  padding-left: 12%;
-}
 
 h1  {
   font-size: 75px;
@@ -124,6 +102,48 @@ h1  {
 .glyphicon {
   top: 10px;
   left: 1px;
+}
+
+/* About Hero Unit */
+
+.about-unit-hero {
+  background: linear-gradient( rgba(0, 72, 131, 0.5),  rgba(0, 72, 131, 0.5)), url('../img/about-pavilion.jpg') fixed;
+  background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+  margin: 0;
+}
+
+.about-text-hero {
+  text-align: left;
+  position: absolute;
+  width: 95%;
+  top: 45%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+/* FAQ Hero Unit */
+
+.about-unit-hero {
+  background: linear-gradient( rgba(80, 128, 61, 0.5),  rgba(80, 128, 61, 0.5)), url('../img/about-pavilion.jpg') fixed;
+  background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+  margin: 0;
+}
+
+.about-text-hero {
+  text-align: left;
+  position: absolute;
+  width: 95%;
+  top: 45%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
 
 /* Main Content */
@@ -448,9 +468,23 @@ h3 {
     text-align: center;
   }
 
+  /* Desktop FAQ Main Content */
+
+  .faq-button {
+    color: white;
+    border: none;
+    background-color: #7FB069;
+    border-radius: 5px;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 40px;
+    line-height: 50%;
+  }
+
   /* Desktop Footer */
 
-  .about-footer {
+  .austin-footer {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
     justify-content: center;
@@ -458,7 +492,7 @@ h3 {
     margin: 10% 0 2% 0;
   }
 
-  .about-footer-image {
+  .austin-footer-image {
     grid-column-start: 1;
     grid-column-end: 7;
     margin: 0 auto;

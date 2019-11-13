@@ -3,43 +3,90 @@
 <head>
     <meta charset='utf-8'>
 
-    <meta name='home' content='home-page' initial-scale='1'>
+    <meta name="viewport" content="width=device-width" initial-scale="1">
 
     <title>VanParksVision</title>
 
-    <link type='text/css' rel='stylesheet' href= "../css/styles.css">
-    <link type='text/css' rel='stylesheet' href='../css/animate.css-master/animate.css'>
-
-<body>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link type='text' rel='stylesheet' href='../css/animate.css-master/animate.css'>
+    <link type='text/css' rel='stylesheet' href='../css/styles.css'>
+</head>
+<body class='about-body'>
 
     <!-- Navigation Area -->
-    <nav>
-     
-           <a class="nav-link-img" href= "../index.html"><img class="nav-img-logo" src="../imgs/logo.png"></a>
-            <a class="nav-link-about nav-link" href='../about/index.html'>About</a>
-			<a class="nav-link-faq nav-link" href='../faq/index.html'>Faq</a>
-            <a class="nav-link-contact nav-link" href='../contact/index.html'>Contact</a>
-			<a class="nav-link-team nav-link" href='../team/index.html'>Team</a>
-			<a class="nav-link-casestudy nav-link" href='../casestudy/index.html'>Case Study</a>
-            <button class="nav-button"><a class="nav-button-text"  href="../download/index.html">Download</a></button>
-       
+    <nav class='austin-nav'>
+        <div class='austin-navigation-list'>
+            <a class='austin-navigation-list-logo' href='../index.html'><img src='../img/austin-logo-draft.png'></a> <!-- Title Image/Text -->
+            <div class='austin-navigation-list-item'></div>
+            <div class='austin-navigation-list-item'></div>
+            <div class='austin-navigation-list-item'></div>
+            <div class='austin-navigation-list-item'></div>
+            <div class='austin-navigation-list-item'></div>
+            <div class='austin-navigation-list-item'></div>
+            <div class='austin-navigation-list-item'></div>
+            <div class='austin-navigation-list-item'></div>
+            <div class='austin-navigation-list-item'></div>
+            <a class='austin-navigation-list-item' href='../about/index.html'>About</a>
+            <a class='austin-navigation-list-item' href='../faq/index.html'>FAQ</a>
+            <a class='austin-navigation-list-item' href='../contact/index.html'>Contact</a>
+            <a class='austin-navigation-list-item' href='../team/index.html'>Credits</a>
+            <a class='austin-navigation-list-item' href='../casestudy/'>Case Study</a>
+            <a class='austin-navigation-list-download' href='../download/index.html'><button class='austin-button-download'>Download</button></a>
+        </div>
     </nav>
 
     <!-- Header/Hero Unit Area -->
-     <div class='hero-unit'>
-        <div class='hero-content'>
-            <h1></h1>
+    <header class='about-unit-hero'>
+        <div class='about-text-hero'>
+            <h1>About</h1>
+            <p class='subtitle'>Find out more about the app and the features available within.</p>
         </div>
-    </div>
+        <a data-scroll href='#about-container-content' class='scrollDown scrollToContent'>
+			<span class='glyphicon glyphicon-chevron-down'></span>
+        </a>
+    </header>
 
-    <!-- Main Content Area -->
-    <section>
-    </section>
-    <section>
+    <!-- Goal of the app -->
+    <section id='about-container-content'>
+        <div class='about-goal'>
+            <h2 class='about-heading-goal'>Goal of the App</h2>
+            <p class='about-paragraph-goal'>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
+            <p class='about-paragraph-goal'>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
+            <p class='about-paragraph-goal'>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment. Bring to the table win-win survival strategies to ensure proactive domination.</p>
+        </div>
+        <div class='about-placeholder'>
+            <svg width="260" height="260" viewBox="0 0 260 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="130" cy="130" r="130" fill="#99CF6A" fill-opacity="0.55"/>
+            </svg>
+        </div>
+
+    <!-- Phone image titles, images, and descriptions -->
+        <div class='about-container-park'>
+            <h3 class='about-heading-park'>Locate a Park</h3>
+            <div class='about-div-phoneimage'><img src='../img/about-screenshot-test-park.png'></div>
+            <p class='about-paragraph-phonedesc'>Short description of image above</p>
+        </div>
+        <div class='about-container-features'>
+            <h3 class='about-heading-features'>Find Park Features</h3>
+            <div class='about-div-phoneimage'><img src='../img/about-screenshot-test-features.png'></div>
+            <p class='about-paragraph-phonedesc'>Short description of image above</p>
+        </div>
+        <div class='about-container-future'>
+            <h3 class='about-heading-future'>Imagine the Future</h3>
+            <div class='about-div-phoneimage'><img src='../img/about-screenshot-test-future.png'></div>
+            <p class='about-paragraph-phonedesc'>Short description of image above</p>
+        </div>
     </section>
 
     <!-- Footer Area -->
-    <footer>
-    </footer>
+    <div class='austin-footer'>
+        <div class='austin-footer-image'><img src='../img/austin-footer-logo.png'></div>
+        <div class='footer-list-item'></div>
+        <div class='footer-list-item'><a href='../index.html'>Home</a></div>
+        <div class='footer-list-item'><a href='../about/index.html'>About</a></div>
+        <div class='footer-list-item'><a href='../faq/index.html'>Help</a></div>
+        <div class='footer-list-item'><a href='../team/index.html'>Credits</a></div>
+        <div class='footer-list-item'><a href='../casestudy/'>Privacy Policy</a></div>
+    </div>
 </body>
 </html>

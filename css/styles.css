@@ -99,9 +99,14 @@ h1  {
   left: 49%;
 }
 
-.glyphicon {
-  top: 10px;
-  left: 1px;
+.arrow-down {
+  border: solid black;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 8px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  margin-bottom: 7.5px;
 }
 
 /* About Hero Unit */
@@ -118,16 +123,16 @@ h1  {
 .about-text-hero {
   text-align: left;
   position: absolute;
-  width: 95%;
+  width: 75%;
   top: 45%;
-  left: 40%;
+  left: 50%;
   transform: translate(-50%, -50%);
   color: white;
 }
 
 /* FAQ Hero Unit */
 
-.about-unit-hero {
+.faq-unit-hero {
   background: linear-gradient( rgba(80, 128, 61, 0.5),  rgba(80, 128, 61, 0.5)), url('../img/about-pavilion.jpg') fixed;
   background-repeat: no-repeat;
 	background-size: cover;
@@ -136,7 +141,7 @@ h1  {
   margin: 0;
 }
 
-.about-text-hero {
+.faq-text-hero {
   text-align: left;
   position: absolute;
   width: 95%;
@@ -163,7 +168,7 @@ h3 {
 #about-container-content {
   display: grid;
   grid-template-columns: auto;
-  grid-gap: 5% 0;
+  grid-gap: 2% 0;
   width: 100%;
   padding: 5% 5% 10% 10%;
 }
@@ -179,14 +184,10 @@ h3 {
 }
 
 .about-placeholder {
-  padding: 20% 40% 0% 0%;
-  grid-column-start: 5;
-  grid-column-end: 7;
+  margin: 0 auto;
 }
 
 .about-container-park {
-  grid-column-start: 1;
-  grid-column-end: 3;
   display: grid;
   grid-template-columns: auto;
   grid-gap: 5% 5%;
@@ -197,8 +198,6 @@ h3 {
 }
 
 .about-container-features {
-  grid-column-start: 3;
-  grid-column-end: 5;
   display: grid;
   grid-template-columns: auto;
   grid-gap: 5% 5%;
@@ -209,8 +208,6 @@ h3 {
 }
 
 .about-container-future {
-  grid-column-start: 5;
-  grid-column-end: 7;
   display: grid;
   grid-template-columns: auto;
   grid-gap: 5% 5%;

@@ -6,17 +6,16 @@
     <meta name='home' content='home-page' initial-scale='1'>
 
     <title>VanParksVision</title>
-    
-    <script src="../javascript/nav.js">window.page="team";</script>
+
+    <link type='text/css' rel='stylesheet' href='../css/styles.css'>
     <link type='text/css' rel='stylesheet' href='../css/animate.css-master/animate.css'>
-    <link type='text/css' rel='stylesheet' href="../css/styles.css">
 </head>
 	
 <body>
-<div id="team-body">
+<div class="team-body">
     <!-- Navigation Area -->
    <nav>	
-     		<a class="nav-acc" ><button class="acc" onclick="accOpen(page);">☰</button> </a>
+     		<a class="nav-acc" ><button class="acc" onclick="accOpen()">☰</button> </a>
             <a class="nav-link-img" href='../index.html'><img class="nav-img-logo" src="../imgs/logo.png"></a>
             <a class="nav-link-about nav-link" href='../about/index.html'>About</a>
 			<a class="nav-link-faq nav-link" href='../faq/index.html'>Faq</a>
@@ -29,12 +28,12 @@
 	<!-- Nav Modal Area -->
 <div  style="display:none" id="navModal">
   <button onclick="accClose()" class="close"> &times;</button>
-  <a href="../download/index.html" class="modal-link modal-link-download" id="modal-download"><h2></h2>Download<div class="underline"></div></a>
-  <a href="../about/index.html" class="modal-link modal-link-about" id="modal-about">About<div class="underline"></div></a>
-  <a href="../faq/index.html" class="modal-link modal-link-faq" id="modal-faq">FAQ<div class="underline"></div></a>
-  <a href="../contact/index.html" class="modal-link modal-link-contact"id="modal-contact">Contact<div class="underline"></div></a>
-  <a href="../team/index.html" class="modal-link modal-link-team" id="modal-team">Team<div class="underline"></div></a>
-  <a href="../casestudy/index.html" class="modal-link modal-link-case"id="modal-case">Case Study</a>
+  <a href="../download/index.html" class="modal-link modal-link-download">Download</a>
+  <a href="../about/index.html" class="modal-link modal-link-about">About</a>
+  <a href="../faq/index.html" class="modal-link modal-link-faq">FAQ</a>
+  <a href="../contact/index.html" class="modal-link modal-link-contact">Contact</a>
+  <a href="../team/index.html" class="modal-link modal-link-team">Team</a>
+  <a href="../casestudy/index.html" class="modal-link modal-link-case">Case Study</a>
   <a class="modal-link-img" href='../index.html'><img class="modal-img-logo" src="../imgs/logo.png"></a>
 </div>
     <!-- Header/Hero Unit Area -->
@@ -45,51 +44,11 @@
     </div>
 
     <!-- Main Content Area -->
-    <div class="main">
-       
-        <div class="main-bar">
-            <h3 class="main-bar-text">Management</h3>
-            <button class="drop"></button>
-        </div>
-        <div class="panel">
-                <p>Lorem ipsum...</p>
-        </div>
-        <div class="main-bar">
-            <h3 class="main-bar-text">Video</h3>
-            <button class="drop"></button>
-        </div>
-        <div class="panel">
-                <p>Lorem ipsum...</p>
-         </div>
-        <div class="main-bar">
-            <h3 class="main-bar-text">Assets</h3>
-            <button class="drop"></button>
-        </div>
-        <div class="panel">
-                <p>Lorem ipsum...</p>
-        </div>
-        <div class="main-bar">
-            <h3 class="main-bar-text">Design</h3>
-            <button class="drop"></button>
-        </div>
-        <div class="panel">
-                <p>Lorem ipsum...</p>
-        </div>
-        <div class="main-bar">
-            <h3 class="main-bar-text">Development</h3>
-            <button class="drop"></button>
-        </div>
-        <div class="panel">
-                <p>Lorem ipsum...</p>
-        </div>
-        <div class="main-bar">
-            <h3 class="main-bar-text">Promotions</h3>
-            <button class="drop"></button>
-        </div>
-        <div class="panel">
-                <p>Lorem ipsum...</p>
-        </div>
-    </div>
+    <section>
+    </section>
+    <section>
+    </section>
+
     <!-- Footer Area -->
     <footer>
 		<a class="footer-link-img" href='../index.html'><img class="footer-img-logo" src="../imgs/logo.png"></a>
@@ -103,30 +62,22 @@
     </footer>
 </div><!-- end of team-body -->
 	
-<script>
-let acc = document.getElementsByClassName("main-bar");
-  
-  
-  for (let i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-      /* Toggle between adding and removing the "active" class,
-      to highlight the button that controls the panel */
-      this.classList.toggle("active");
-      let drop = this.childNodes[3];
-      drop.classList.toggle("active");
-      let body = document.getElementById("team-body");
-      console.log(body);
-      body.style.display="grid";
-      /* Toggle between hiding and showing the active panel */
-      var panel = this.nextElementSibling;
-      if (panel.style.display === "block") {
-        panel.style.display = "none";
-      } else {
-        panel.style.display = "block";
-      }
-    });
-  }
-</script>	
+	<script>
+function accOpen() {
+  document.getElementById("navModal").style.width = "100%";
+  document.getElementById("navModal").style.display = "grid";
+}
+
+function accClose() {
+  document.getElementById("navModal").style.display = "none";
+}
+		
+function colorModal(){
+	let page = window.location.href;
+	let link = document.getElementsByClassName("modal-link");
+	
+}
+</script>
 	
 	
 	

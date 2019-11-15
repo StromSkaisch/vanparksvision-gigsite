@@ -50,13 +50,8 @@ table {
 	border-spacing: 0;
 }
 /*End of reset*/
-body {
-font-size:10px;
-height: 100%;
-width: 100%;
 
-}
-
+/*Desktop media query*/
 /* Body Copy */
 p {	
 font-family: Didact Gothic;
@@ -128,33 +123,41 @@ font-size: 2em;
 line-height: 2;
 }
 
-/*Mobile media Query*/
-/*page styling*/
-#team-body{
+
+/* Navigation */
+nav{
+	position: fixed;
 	display:grid;
 	height:100%;
-	max-height: 1710px;
+	max-height: 126px;
 	width:100%;
-	grid-template-rows: 106px 223px auto 180px;
-	grid-template-areas:"."
-						"hero"
-						"main"
-						"footer";
-	
-}
-/*Nav bar*/
-nav{
-	display: grid;
-	position: fixed;
-	max-height: 106px;
-	width:100%;
-	grid-template-columns: .25fr 4fr 3fr 1fr .5fr;
-	grid-template-rows:1fr 1fr;
-	grid-template-areas:". imglogo . acc ."
-					    ". imglogo . acc .";
+	grid-template-columns: .5fr 3fr 3fr 1.35fr 1fr 1.7fr 1.25fr 2.25fr 1.5fr .5fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas:". imglogo . about faq contact team casestudy download ."
+					    ". imglogo . . . . . . . . ";
 	background-color: #FFFFFF;
-  margin: auto;
+	margin: auto;
 }
+.nav-link{
+font-family: Tw Cen MT;
+font-style: normal;
+font-size: 2.5em;
+line-height: 1.5;
+color:black;
+text-decoration: none;
+display:block;
+padding:1%;
+}
+.nav-button{
+	grid-area:download;
+	background: #7FB069;
+    border-radius: 5px; 
+	height:100%;
+	max-height:45px;
+	width:100%;
+	max-width: 175px;
+	border:none;
+	margin: auto;
 	
 .austin-nav {
   position: fixed;
@@ -229,124 +232,61 @@ nav{
 	color:white;
 	text-decoration: none;
 	margin:auto;
-}	
-.nav-acc {
-		display:block;
-		grid-area:acc;
-		height:100%;
-		width:auto;
-		max-height:70px;
-		margin:auto;
 }
-	
-	.nav-link{
-display:none;
-
+.nav-img-logo{
+	max-height:123px;
+	height:100%;
+	width:auto;
 }
-	.nav-link-img{
+.nav-link-img{
 	grid-area:imglogo;
 	margin:auto;
-	max-height: 106px;
+	
 }
 .nav-link-about{
-	display: none;
+	grid-area:about;
 	
 }
 .nav-link-faq{
-	display: none;
+	grid-area:faq;
 	
 }
 .nav-link-contact{
-	display: none;
+	grid-area:contact;
 	
 }
 .nav-link-team{
-	display: none;
+	grid-area:team;
 	
 }
 .nav-link-casestudy{
-	display: none;
+	grid-area:casestudy;
 	
 }
-.nav-button{
-	display: none;
+.nav-link-download{
+	
+	padding:10% 0 0 0;
+	
 }
-.nav-img-logo{
-	max-height:106px;
-	height:100%;
-	width:auto;
-}
-/*Footer*/
-footer{
-	grid-area: footer;
-	display:grid;
-	grid-template-rows: .1fr 3fr .2fr 1fr .75fr;
-	grid-template-columns: 1fr auto auto auto auto auto auto auto 1fr;
-	grid-template-areas:". . . . . . . . . "
-						". . . . . fimglogo . . . "
-						". . . . . fimglogo . . . "
-						". fhome ffaq fabout fcontact fteam fcase fprivacy ."
-						". . . . . . . . . ";
-	align-items: center;
-	max-height:180px;
-	margin:auto;
+.nav-acc{
+		display:none;
 	}
-.footer-img-logo{
-	
-	max-height:50px;
-	height:100%;
-	width:auto;
-}
-.footer-link{
-font-family: Tw Cen MT;
-font-style: normal;
-font-size: .5em;
-line-height: 1;
-color:black;
-text-decoration: none;
-padding:0% 10px;
-}
-.footer-link-about{
-	grid-area:fabout;
-	margin: auto;
-}
-.footer-link-faq{
-	grid-area:ffaq;
-	margin: auto;
-}
-.footer-link-contact{
-	grid-area:fcontact;
-	margin: auto;
-}
-.footer-link-team{
-	grid-area:fteam;
-	margin: auto;
-}
-.footer-link-casestudy{
-	grid-area:fcase;
-	margin: auto;
-}
-.footer-link-home{
-	grid-area:fhome;
-	margin: auto;
-}
-.footer-link-privacy{
-	grid-area:fprivacy;
-	margin: auto;
-}	
 .acc{
 	border:none;
 	background:none;
-	font-size: 6em;
+	font-size: 4em;
 	color: #004883;
 	
 }
-.footer-link-img{
-	grid-area:fimglogo;
-	margin:auto;
-	height: 100%;
+.team-body{
+	display:grid;
+	height:100%;
 	width:100%;
-	
+	grid-template-rows: 1fr 3fr 10fr 1fr;
+	grid-template-areas:"."
+						"hero"
+						"main"
+						"footer";
 }
 /*Nav Modal*/
 #navModal{
@@ -369,8 +309,8 @@ padding:0% 10px;
 }
 .modal-link{
 font-family: Tw Cen MT;
-font-weight: bold;
-font-size: 5em;
+font-style: normal;
+font-size: 2.5em;
 line-height: 1.5;
 color:black;
 text-decoration: none;
@@ -379,13 +319,6 @@ padding:0% 5% 0% 0%;
 text-align: right;
 
 
-}
-.underline{
-	height:2px;
-	width:100%;
-	bottom:0px;
-	/*margin:auto 0% auto 20%;*/
-	background:black;
 }
 .modal-link-img{
 	grid-area: mlogo
@@ -402,7 +335,7 @@ text-align: right;
 	grid-area:close;
 	border:none;
 	background:none;
-	font-size: 8em;
+	font-size: 4em;
 }
 .modal-link-download{
 	grid-area: mdownload;
@@ -646,172 +579,6 @@ a:link, a:visited {
   grid-column-start: 5;
   grid-column-end: 7;
 }
-
-/* Hero Unit */
-.hero-unit{
-	grid-area: hero;
-	background-image: url(../imgs/squad.png);
-	width: auto;
-	height: 100%;
-	max-height: 223px;
-	background-size: 100%;
-}
-/* Main Content */
-.main{
-	grid-area: main;
-	height: 100%;
-	width: auto;
-}
-.main-bar{
-	max-height: 66px;
-	height:100%;
-	background: #3573B3;
-	max-width:1286px;
-	margin:26px auto auto auto;
-	color:white; 
-	display:grid;
-	grid-template-columns: 4% 2fr 3fr 1fr 4% ;
-	grid-template-areas: ". text . drop .";
-}
-.main-bar-text{
-	margin:auto auto auto 4%;
-	grid-area:text;
-}
-.panel {
-	grid-area: panel;
-	padding: 0 18px;
-	display: none;
-	overflow: hidden;
-	height:100%;
-	max-height:635px;
-	width:auto;
-  }
-.drop{
-	grid-area:drop;
-	border: none;
-	background: none;
-	margin: 0 0 auto 50%;
-	display: block;
-	height: auto;
-	width: auto;
-	cursor: pointer;
-	transition: 0.4s;
-}
-.drop:after {
-    content: '\002B';
-    color:white;
-    font-weight: bold;
-	font: 4em sans-serif;
-	
-}
-.drop.active:after {
-    content: "\2212";
-}
-/*Mobile media Query End*/
-
-
-/*Tablet media query*/
-@media only screen and ( min-width : 800px )
-{
-nav{
-	max-height: 106px;
-	height: 100%;
-	display: grid;
-	grid-template-columns: .2fr auto .5fr auto auto auto auto auto auto .05fr;
-	grid-template-areas:". imglogo . about faq contact team casestudy download .";
-	
-	}
-	
-.nav-link{
-font-family: Tw Cen MT;
-text-decoration: none;
-font-style: normal;
-font-weight: bold;
-font-size: 1.5em;
-line-height: 1.5;
-display:block;
-padding:1%;
-margin:auto;
-color:black;
-}	
-.nav-button{
-	display: block;
-	grid-area:download;
-	height:100%;
-	max-height:30px;
-	width:100%;
-	max-width: 175px;
-	border:none;
-	margin: auto;
-	background: #7FB069;
-    border-radius: 5px; 
-}
-
-	
-
-.nav-button-text{
-	font-family: Tw Cen MT;
-    font-style: normal;
-	font-size: 1.5em;
-	line-height: 1;
-	color:white;
-	text-decoration: none;
-	margin:auto;
-}
-.nav-link-img{
-	grid-area:imglogo;
-	margin:auto;
-	
-	
-}
-.nav-img-logo{
-	max-height:100px;
-	height:100%;
-	width:auto;
-}
-.nav-link-about{
-	grid-area:about;
-	
-}
-.nav-link-faq{
-	grid-area:faq;
-	
-}
-.nav-link-contact{
-	grid-area:contact;
-	
-}
-.nav-link-team{
-	grid-area:team;
-	
-}
-.nav-link-casestudy{
-	grid-area:casestudy;
-	
-}
-.nav-link-download{
-	
-	padding:10% 0 0 0;
-	
-}
-.nav-acc{
-		display:none;
-	}
-}
-
-footer{
-grid-template-rows: .2fr 1fr .2fr 1fr .2fr;
-
-}
-.footer-img-logo{
-max-height:60px;
-height:100%;
-width:auto;
-}
-.footer-link{
-text-decoration: none;
-font-size: 1.5em;
-line-height: 1;
 
 .about-container-park {
   grid-column-start: 1;
@@ -1125,117 +892,3 @@ line-height: 1;
     color: rgb(0, 72, 131);
   }
 }
-/*Tablet media query end*/
-
-/*desktop media query*/
-@media only screen and ( min-width : 1332px )
-{
-/*body styles*/
-.team-body{
-	grid-template-rows: auto 745px auto 180px;
-}
-	/* Navigation */
-nav{
-	position: fixed;
-	height:100%;
-	max-height: 106px;
-	width:100%;
-	grid-template-columns: .2fr auto .5fr auto auto auto auto auto auto .05fr;
-	grid-template-areas:". imglogo . about faq contact team casestudy download .";
-	background-color: #FFFFFF;
-	margin: auto;
-	align-items: center;
-	
-}
-.nav-link{
-font-weight: bold;
-font-family: Tw Cen MT;
-font-size: 2.5em;
-line-height: 1.5;
-color:black;
-text-decoration: none;
-display:block;
-padding:15%;
-width: 100%;
-}
-.nav-button{
-	
-	text-decoration: none;
-	max-height:45px;
-	margin: auto auto auto 10%;
-}
-.nav-button-text{
-
-	font-size: 2em;
-	
-}
-.nav-img-logo{
-	max-height:103px;
-	height:100%;
-	width:auto;
-}
-.nav-link-img{
-	grid-area:imglogo;
-	margin:auto;
-	
-}
-.nav-link-about{
-	grid-area:about;
-	
-}
-.nav-link-faq{
-	grid-area:faq;
-	
-}
-.nav-link-contact{
-	grid-area:contact;
-	
-}
-.nav-link-team{
-	grid-area:team;
-	
-}
-.nav-link-casestudy{
-	grid-area:casestudy;
-	padding: 15% 20% 15% 15%;
-}
-.nav-link-download{
-	
-	padding:10% 0 0 0;
-	
-}
-.nav-acc{
-		display:none;
-	}
-/* Footer */
-footer{
-	
-	height:100%;
-	max-height:220px;
-	width:100%;
-	grid-template-rows: .2fr 3fr .2fr 1fr .2fr;
-	/*grid-template-columns: 3fr 1.75fr 1.25fr 1.75fr 2.1fr 1.5fr 3fr 3.5fr 3fr;*/
-	
-}
-.footer-img-logo{
-	max-height:123px;
-	height:100%;
-	width:auto;
-}
-
-.footer-link{
-font-family: Tw Cen MT;
-font-style: normal;
-font-size: 2em;
-display:block;
-padding:0 15px;
-text-decoration: none;
-}
-/*Hero*/
-.hero-unit{
-	max-height: 745px;
-}
-
-} /*desktop media query end*/
-
-

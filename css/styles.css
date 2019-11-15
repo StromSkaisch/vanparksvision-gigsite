@@ -485,9 +485,7 @@ a:link, a:visited {
 }
 .home-hero-content {
 	background-image: url("backofswings.png");
-  padding: 2%;
-}
-
+	padding: 2%;
 .scrollDown {
   background-color: rgba(255, 255, 255, 1);
   -moz-border-radius: 50%;
@@ -713,14 +711,16 @@ a:link, a:visited {
 
 
 /*Tablet media query*/
-@media only screen and ( min-width : 800px ) {
-nav {
+@media only screen and ( min-width : 800px )
+{
+nav{
 	max-height: 106px;
 	height: 100%;
 	display: grid;
 	grid-template-columns: .2fr auto .5fr auto auto auto auto auto auto .05fr;
 	grid-template-areas:". imglogo . about faq contact team casestudy download .";
-  }
+	
+	}
 	
 .nav-link{
 font-family: Tw Cen MT;
@@ -794,8 +794,9 @@ color:black;
 	padding:10% 0 0 0;
 	
 }
-.nav-acc {
+.nav-acc{
 		display:none;
+	}
 }
 
 footer{
@@ -811,7 +812,6 @@ width:auto;
 text-decoration: none;
 font-size: 1.5em;
 line-height: 1;
-}
 
 .about-container-park {
   grid-column-start: 1;
@@ -887,8 +887,6 @@ line-height: 1;
 .footer-list-item > a:hover {
   text-decoration: none;
   color: rgb(0, 72, 131);
-}
-
 }
 
 @media only screen and (min-width: 1200px) {
@@ -1239,3 +1237,5 @@ text-decoration: none;
 }
 
 } /*desktop media query end*/
+
+

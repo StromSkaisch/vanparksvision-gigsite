@@ -1,4 +1,16 @@
-   /* Navigation */
+/* Universal */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Tw Cen MT;
+    scroll-behavior: smooth;
+}
+
+/* Navigation */
 
 .austin-nav {
     position: fixed;

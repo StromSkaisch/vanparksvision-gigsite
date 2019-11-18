@@ -1,0 +1,320 @@
+
+/* Universal */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Navigation */
+
+nav{
+    position: fixed;
+    display:grid;
+    height:100%;
+    max-height: 126px;
+    width:100%;
+    grid-template-columns: .5fr 3fr 3fr 1.35fr 1fr 1.7fr 1.25fr 2.25fr 1.5fr .5fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:". imglogo . about faq contact team casestudy download ."
+                        ". imglogo . . . . . . . . ";
+    background-color: #FFFFFF;
+    margin: auto;
+}
+.nav-link{
+	font-family: Tw Cen MT;
+	font-style: normal;
+	font-size: 2.5em;
+	line-height: 1.5;
+	color:black;
+	text-decoration: none;
+	display:block;
+	padding:1%;
+	}
+
+.nav-button{
+    grid-area:download;
+    background: #7FB069;
+    border-radius: 5px;
+    height:100%;
+    max-height:45px;
+    width:100%;
+    max-width: 175px;
+    border:none;
+    margin: auto;
+}
+
+.nav-button-text{
+    font-family: Tw Cen MT;
+    font-style: normal;
+    font-size: 2.5em;
+    line-height: 1;
+    color:white;
+    text-decoration: none;
+    margin:auto;
+}
+
+.nav-img-logo{
+    max-height:123px;
+    height:100%;
+    width:auto;
+}
+
+.nav-link-img{
+    grid-area:imglogo;
+    margin:auto;
+
+}
+
+.nav-link-about{
+    grid-area:about;
+
+}
+
+.nav-link-faq{
+    grid-area:faq;
+
+}
+.nav-link-contact{
+    grid-area:contact;
+
+}
+
+.nav-link-team{
+    grid-area:team;
+
+}
+
+.nav-link-casestudy{
+    grid-area:casestudy;
+
+}
+
+.nav-link-download{
+    padding:10% 0 0 0;
+}
+
+.nav-acc{
+        display:none;
+    }
+
+.acc{
+    border:none;
+    background:none;
+    font-size: 4em;
+    color: #004883;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  opacity: 0.5;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+/* Hero Unit */
+/* hero image/video */
+body {
+		font-family: 'Didact Gothic', serif;
+		font-size: 1.25em;
+		color: #000000;
+		padding: 1%;
+		margin: 2% auto;
+
+		}
+h1 {
+	font-family: "Tw Cen MT", Book Antiqua, sans-serif;
+	font-size: 2em;
+	font-weight: bold;
+}
+h2 {
+	font-family: "Tw Cen MT", Book Antiqua, sans-serif;
+	font-size: 1.75em;
+	font-weight: bold;
+}
+span {
+	font-style: italic;
+	}
+
+button { 
+	background: #7FB069;
+	border-radius: 5px;
+	color: white;
+	margin:  auto;
+	padding: 1%;
+	}
+
+a:link, a:visited {
+	background: #7FB069;
+	border-radius: 5px;
+	color: white;
+	margin: 2% auto;
+	padding: 1%;
+	text-decoration: none;
+	}
+
+.imagebox {
+	grid-area: image;
+	display: block;
+	margin: auto;
+	max-width: 600px;
+			
+		}
+	
+.imagebox img {
+	width: 100%;
+
+		}
+	
+.hero-unit{
+	grid-area: hero;
+	background-image: url("img/backofswings.png");
+	background-size: cover;
+   	color: white;
+    width: 100%;
+    
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    text-align: left;
+    padding: 10% 2%;
+    margin: 10% auto;
+}
+.hero-content {
+	background-image: url("backofswings.png");
+	padding: 2%;
+}
+
+/* Main Content */
+.main {
+		width: 100%;
+		margin:  auto;
+		padding: 1%;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 1em;
+   		width: 100%;
+    	text-align: left;
+    	grid-gap: 2%;	
+	}
+
+		.block1 {
+			display: block;
+			margin: 1% auto;
+			padding: 1%;
+			}
+	
+		.block2{
+			padding: 2%;
+			margin: 2% auto;
+		}
+
+		.block3{
+			padding: 2%;
+			margin: 2% auto;
+		}
+
+		.block4{
+			padding: 2%;
+			margin: 2% auto;
+		}
+
+/* Footer */
+
+/* tablet styles */
+	@media only screen and (min-width: 550px) and (max-width: 700px) {
+	
+	.main{
+		margin: 2% auto;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 2%;
+		grid-template-areas:
+		
+		"block1 image1"
+		"image2 block2"
+		"block3 image3"
+		"image4 block4";	
+	}
+	
+	}
+  
+	/* desktop styles */
+	@media only screen and (min-width: 701px) {
+	
+	.main{
+		margin: 2% auto;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 2%;
+		grid-template-areas:
+		
+		"block1 image1"
+		"image2 block2"
+		"block3 image3"
+		"image4 block4";	
+	}
+}
+		

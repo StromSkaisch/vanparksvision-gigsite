@@ -37,9 +37,10 @@ nav ul {
 	display: none;
 	flex-direction: column;
 	width: 100%;
-	background-color: white;
+	background-color: #F8F8F8;
 	z-index: 0;
 	height: 90vh;
+	padding-top: 40px;
 }
 
 nav a {
@@ -87,6 +88,8 @@ nav a:last-of-type {
 		height: auto;
 		width: auto;
 		flex-direction: row;
+		background-color: inherit;
+		padding-top: 0;
 	}
 
 	nav a {

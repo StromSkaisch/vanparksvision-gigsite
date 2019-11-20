@@ -155,7 +155,7 @@ body {
   #about-container-content {
     display: grid;
     grid-template-columns: auto;
-    grid-gap: 2% 0;
+    grid-gap: 5% 0;
     width: 100%;
     padding: 5% 5% 10% 10%;
   }

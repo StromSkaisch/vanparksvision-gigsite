@@ -4,7 +4,13 @@
     box-sizing: border-box;
 }
 
-html, body {
+html {
+  height: 100%;
+  font-family: Tw Cen MT;
+  scroll-behavior: smooth;
+}
+
+body {
     height: 100%;
     font-family: Tw Cen MT;
     scroll-behavior: smooth;
@@ -206,18 +212,21 @@ html, body {
     letter-spacing: 0.01em;
     text-align: center;
   }
+
+  .about-div-phoneimage {
+    margin: 0 auto;
+  }
   
   /* Footer */
   
-  .about-footer {
+  .austin-footer {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
-    justify-content: center;
     grid-gap: 7% 5%;
     margin: 10% 0 2% 0;
   }
   
-  .about-footer-image {
+  .austin-footer-image {
     grid-column-start: 1;
     grid-column-end: 7;
     margin: 0 auto;
@@ -381,6 +390,7 @@ html, body {
     #about-container-content {
       display: grid;
       grid-template-columns: auto auto auto auto auto auto;
+      grid-template-rows: auto auto auto auto;
       grid-gap: 10% 5%;
       padding: 5% 10% 10% 10%;
     }
@@ -456,8 +466,9 @@ html, body {
   
     .austin-footer {
       display: grid;
+      grid-column-start: 1;
+      grid-column-end: 7;
       grid-template-columns: auto auto auto auto auto auto;
-      justify-content: center;
       grid-gap: 7% 5%;
       margin: 10% 0 2% 0;
     }

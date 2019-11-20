@@ -238,32 +238,3 @@ header .arrow-link:hover .down-arrow {
 	min-height: 100vh;
 }
 
-
-
-/* -- Footer -- */
-footer {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 50px;
-}
-
-footer img {
-	width: 300px;
-	margin-bottom: 40px;
-}
-
-footer ul {
-	display: flex;
-	flex-direction: row;
-}
-
-footer a {
-	margin-right: 50px;
-	color: inherit;
-}
-
-footer a:last-of-type {
-	margin-right: 0;
-}

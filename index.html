@@ -1,45 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset='utf-8'>
-
-    <meta name='home' content='home-page' initial-scale='1'>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>VanParksVision</title>
 
     <link type='text/css' rel='stylesheet' href='css/styles.css'>
     <link type='text/css' rel='stylesheet' href='css/animate.css-master/animate.css'>
 
-<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>    
 
+<body>
+<div id="wrapper">
     <!-- Navigation Area -->
     <nav>
-     
-           <a class="nav-link-img" href='index.html'><img class="nav-img-logo" src="imgs/logo.png"></a>
-            <a class="nav-link-about nav-link" href='about/index.html'>About</a>
-			<a class="nav-link-faq nav-link" href='faq/index.html'>Faq</a>
-            <a class="nav-link-contact nav-link" href='contact/index.html'>Contact</a>
-			<a class="nav-link-team nav-link" href='team/index.html'>Team</a>
-			<a class="nav-link-casestudy nav-link" href='casestudy/index.html'>Case Study</a>
-            <button class="nav-button"><a class="nav-button-text"  href="download/index.html">Download</a></button>
-       
+        <div>
+            <img id="logo" src="imgs/logo-horizontal.svg">
+            <img id="mobile-menu-icon" src="imgs/mobile-menu.svg">
+        </div>
+        <ul id="mobile-menu">
+            <a href='about/index.html'><li>About</li></a>
+            <a href='faq/index.html'><li>FAQ</li></a>
+            <a href='contact/index.html'><li>Contact</li></a>
+            <a href='team/index.html'><li>Team</li></a>
+            <a href='casestudy/index.html'><li>Case Study</li></a>
+            <a href="download/index.html"><li><button>Download</button></li></a>
+        </ul>
     </nav>
 
     <!-- Header/Hero Unit Area -->
-     <div class='hero-unit'>
-        <div class='hero-content'>
-            <h1>Hello</h1><p>World</p>
-        </div>
-    </div>
+    <header>
+        <!-- Hero Mask -->
+        <div></div>
+
+        <h1>VanParksVision</h1>
+        <p>Future Parks At Your Fingertips</p>
+    </header>
 
     <!-- Main Content Area -->
-    <section>
-    </section>
-    <section>
-    </section>
+    <div id="home-content">
+        <!-- About -->
+        <section>
+
+        </section>
+        <!-- Team -->
+        <section>
+
+        </section>
+        <!-- Case Study -->
+        <section>
+
+        </section>
+        <!-- FAQ -->
+        <section>
+
+        </section>
+    </div>
 
     <!-- Footer Area -->
     <footer>
     </footer>
+</div> 
+
+<script src="js/scripts.js"></script><!-- Closes Wrapper -->
 </body>
 </html>

@@ -123,17 +123,33 @@ footer img {
 
 footer ul {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 }
 
 footer a {
-	margin-right: 50px;
 	color: inherit;
 	font-family: 'Tw Cen MT';
 	font-size: 1.5em;
+	transition: color .3s ease;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+footer a:hover {
+	color: #3573B3;
 }
 
 footer a:last-of-type {
 	margin-right: 0;
 }
 
+
+@media screen and (min-width: 1094px) {
+	footer ul {
+		flex-direction: row;
+	}
+
+	footer a {
+		margin-right: 50px;
+	}
+}

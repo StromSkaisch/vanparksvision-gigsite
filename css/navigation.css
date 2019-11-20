@@ -22,6 +22,10 @@ nav div {
 	z-index: 1;
 }
 
+nav div a {
+	justify-content: flex-start;
+}
+
 nav #mobile-menu-icon  {
 	width: 50px;
 	cursor: pointer;
@@ -35,6 +39,7 @@ nav ul {
 	width: 100%;
 	background-color: white;
 	z-index: 0;
+	height: 90vh;
 }
 
 nav a {
@@ -49,10 +54,6 @@ nav a {
 
 nav a:hover {
 	color: #3573B3;
-}
-
-nav a:first-of-type {
-	justify-content: flex-start;
 }
 
 nav a:last-of-type {

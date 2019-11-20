@@ -238,3 +238,21 @@ header .arrow-link:hover .down-arrow {
 	min-height: 100vh;
 }
 
+#home-content section {
+	border: 2px solid blue;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin: 0 auto;
+}
+
+@media screen and (min-width: 1094px) {
+	#home-content section {
+		flex-direction: row;
+		width: 80%;
+	}
+
+	.flex-reverse {
+		flex-direction: row-reverse !important;
+	}
+}

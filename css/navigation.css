@@ -1,0 +1,115 @@
+
+/* --Navigation-- */
+
+nav {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	background-color: white;
+	width: 100%;
+	box-shadow: 0 4px 4px -4px rgba(0,0,0,.25);
+	z-index: 999;
+}
+
+nav div {
+	display: flex; 
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 0px 20px 0px 20px;
+	align-items: center;
+	background-color: white;
+	z-index: 1;
+}
+
+nav #mobile-menu-icon  {
+	width: 50px;
+	cursor: pointer;
+}
+
+nav ul {
+	position: absolute;
+	top: 100%;
+	display: none;
+	flex-direction: column;
+	width: 100%;
+	background-color: white;
+	z-index: 0;
+}
+
+nav a {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding: 15px 40px 15px 0px;
+	font-family: Tw Cen MT;
+	font-size: 2.75em;
+}
+
+nav a:first-of-type {
+	justify-content: flex-start;
+}
+
+nav a:last-of-type {
+	border-bottom: none;
+}
+
+nav button {
+	background-color: #66A340;
+	box-shadow: none;
+	padding: 10px 20px;
+	color: white;
+	font-family: Tw Cen MT;
+	font-size: 1em;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+}
+
+
+@media screen and (min-width: 1094px) {
+	nav {
+		display: flex;
+		flex-direction: row;
+		height: auto;
+		align-items: center;
+		padding: 35px 0px 35px 0px;
+	}
+
+	nav #mobile-menu-icon {
+		display: none;
+	}
+
+	nav #logo {
+		position: absolute;
+		left: 30px;
+		top: 7px;
+		width: 325px;
+	}
+
+	nav ul {
+		display: flex;
+		position: relative;
+		height: auto;
+		width: auto;
+		flex-direction: row;
+	}
+
+	nav a {
+		font-size: 1.4em;
+		padding: 0;
+		margin-right: 50px;
+		border: none;
+	}
+}
+
+@media screen and (min-width: 1400px) { 
+	nav a {
+		font-size: 1.75em;
+	}
+
+	nav #logo {
+		width: 350px;
+	}
+}
+

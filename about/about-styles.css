@@ -1,485 +1,299 @@
 /* Universal */
 
-* {
-    box-sizing: border-box;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-html, body {
-    height: 100%;
-    font-family: Tw Cen MT;
-    scroll-behavior: smooth;
+button:focus {
+	outline: none;
 }
 
-/* Navigation */
+button:active {
+	outline: none;
+}
 
-.austin-nav {
-    position: fixed;
-    width: 100%;
-    z-index: 900;
-  }
-  
-.austin-navigation-list {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
-    grid-column-gap: 0%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgb(255, 255, 255, 1);
-  }
-  
-.austin-navigation-list-logo {
-    padding: 0;
-    margin: 0 auto;
-  }
-  
-.austin-navigation-list-item {
-    padding: 48px 0 0 0;
-    margin: 0 auto;
-    color: #333;
-    text-decoration: none;
-    font-size: 25px;
-    line-height: 80%;
-  }
-  
-.austin-navigation-list-item:hover {
-    color: rgb(0, 72, 131);
-    text-decoration: none;
-  }
-  
-.austin-navigation-list-download {
-    padding: 33px 0 0 0;
-    margin: 0 auto;
-    color: #333;
-    text-decoration: none;
-    font-size: 25px;
-    line-height: 80%;
-  }
-  
-.austin-button-download {
-    color: white;
-    border: none;
-    background-color: #7FB069;
-    border-radius: 5px;
-    padding: 15px 15px;
-    text-align: center;
-    text-decoration: none;
-  }
-  
-  /* Hero Unit */
-  
-  h1  {
-    font-size: 75px;
-    line-height: 20px;
-  }
-  
-  .subtitle {
-    margin-top: 1em;
-    font-size: 22px;
-    line-height: 110%;
-    font-family: Didact Gothic, sans-serif;
-    font-style: normal;
-    font-weight: lighter;
-    letter-spacing: 0.06em;
-    padding-top: 2%;
-  }
-  
-  .scrollDown {
-    background-color: rgba(255, 255, 255, 1);
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    width: 60px;
-    text-align: center;
-    display: block;
-    font-size: 3em;
-      color: rgb(46, 46, 46);
-      position: absolute;
-      bottom: 10%;
-    left: 49%;
-  }
-  
-  .arrow-down {
-    border: solid black;
-    border-width: 0 4px 4px 0;
-    display: inline-block;
-    padding: 8px;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    margin-bottom: 7.5px;
-  }
-  
-  /* About Hero Unit */
-  
-  .about-unit-hero {
-    background: linear-gradient( rgba(0, 72, 131, 0.5),  rgba(0, 72, 131, 0.5)), url('../img/about-pavilion.jpg') fixed;
-    background-repeat: no-repeat;
-      background-size: cover;
-      height: 100%;
-      width: 100%;
-    margin: 0;
-  }
-  
-  .about-text-hero {
-    text-align: left;
-    position: absolute;
-    width: 75%;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-  }
-  
+/*End of reset*/
 
-  
-  /* Main Content */
-  
-  h2 {
-    font-size: 50px;
-    line-height: 100%;
+@font-face {
+	font-family: 'Tw Cen MT';
+	src: url(../fonts/twcent.TTF) !important;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+
+/* --Body Copy-- */
+body {
+font-size: 16px;
+font-family: 'Didact Gothic';
+letter-spacing: .5px;
+}
+
+p {	
+font-style: normal;
+font-weight: normal;
+font-size: 2em;
+line-height: 1.75em;
+letter-spacing: .5px; 
+}
+
+
+/* --Headings-- */
+h1 {
+font-family: 'Tw Cen MT';
+font-style: normal;
+font-weight: bold;
+font-size: 7.5em;
+line-height: 2;
+}
+
+h2 {
+font-family: 'Tw Cen MT';
+font-style: normal;
+font-weight: bold;
+font-size: 5em;
+line-height: 2;
+}
+
+h3 {
+font-family: 'Tw Cen MT';
+font-style: normal;
+font-weight: bold;
+font-size: 4em;
+line-height: 2;
+}
+
+h4 {
+font-family: 'Tw Cen MT';
+font-style: normal;
+font-weight: bold;
+font-size: 2.5em;
+line-height: 2;
+}
+
+h5 {
+font-family: 'Tw Cen MT';
+font-style: normal;
+font-weight: bold;
+font-size: 2em;
+line-height: 2;
+}
+
+a {
+font-weight: bold;
+text-decoration: none;
+color: inherit;
+}
+
+a:visited {
+color: inherit;
+}
+
+.download-button {
+	background-color: #66A340;
+	box-shadow: none;
+	padding: 10px 20px;
+	color: white;
+	font-family: Tw Cen MT;
+	font-size: 1em;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	transition: all .3s ease;
+}
+
+.download-button:hover {
+	background-color: #3573B3;
+}
+
+
+/* -- Hero Unit/Header -- */
+header {
+	height: 100vh;
+	width: 100%;
+	background-image: url(../img/about-pavilion.png);
+	background-size: cover;
+	background-position: -300px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+header div {
+	height: 100vh;
+	width: 100%;
+	background-color: rgba(0, 72, 131, 0.5);;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+
+header h1 {
+	z-index: 1;
+	font-size: 3em;
+  line-height: 1;
+  text-shadow: 3px -3px rgba(0,0,0,.25);
+}
+
+header p {
+	z-index: 1;
+	text-align: center;
+  line-height: 1;
+  text-shadow: 2px -2px rgba(0,0,0,.25);
+}
+
+header .download-button {
+	z-index: 1;
+	margin-top: 40px;
+	font-size: 1.8em;
+	font-weight: 300;
+}
+
+header .arrow-link {
+	position: absolute;
+	z-index: 1;
+	width: 50px;
+	bottom: 50px;
+}
+
+header .down-arrow {
+	fill: white;
+	transition: fill .3s ease;
+}
+
+header .arrow-link:hover .down-arrow {
+	fill: #3573B3;
+}
+
+
+@media screen and (min-width: 1094px) {
+	header {
+		height: 100vh;
+		width: 100%;
+		background-image: url(../img/about-pavilion.png);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}	
+
+	header h1 {
+		font-size: 5em;
+		letter-spacing: 1px;
+	}
+}
+
+
+/* -- Home Content -- */
+#about-content {
+	padding: 50px 0px;
+}
+
+#about-content section {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin: 100px auto;
+}
+
+#about-content section img {
+	align-self: center;
+	width: 100%;
+}
+
+#about-content section article {
+	font-size: .7em;
+	padding: 50px;
+}
+
+#about-content section article button {
+	margin-top: 25px;
+	font-size: 2em;
+}
+
+#about-content .phone-examples {
+  display: flex;
+  flex-direction: column;
+}
+
+#about-content section div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: .7em;
+	padding: 20px;
+}
+
+#about-content section img {
+  max-width: 423px;
+}
+
+.leaf-motif-frame {
+  max-width: 260px;
+}
+
+@media screen and (min-width: 1094px) {
+	#about-content section {
+		flex-direction: row;
+		width: 80%;
   }
-  
-  h3 {
-    font-size: 50px;
-    line-height: 40px;
+
+  #about-content .phone-examples {
+    flex-direction: row;
   }
-  
-  /* About Main Content */
-  
-  #about-container-content {
-    display: grid;
-    grid-template-columns: auto;
-    grid-gap: 2% 0;
-    width: 100%;
-    padding: 5% 5% 10% 10%;
-  }
-  
-  .about-paragraph-goal {
-    padding-top: 3%;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 115%;
-    letter-spacing: 0.01em;
-    color: #000000;
-  }
-  
-  .about-placeholder {
-    margin: 0 auto;
-  }
-  
-  .about-container-park {
-    display: grid;
-    grid-template-columns: auto;
-    grid-gap: 5% 5%;
-  }
-  
-  .about-heading-park {
-    text-align: center;
-  }
-  
-  .about-container-features {
-    display: grid;
-    grid-template-columns: auto;
-    grid-gap: 5% 5%;
-  }
-  
-  .about-heading-features {
-    text-align: center;
-  }
-  
-  .about-container-future {
-    display: grid;
-    grid-template-columns: auto;
-    grid-gap: 5% 5%;
-  }
-  
-  .about-heading-future {
-    text-align: center;
-  }
-  
-  .about-paragraph-phonedesc {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 110%;
-    letter-spacing: 0.01em;
-    text-align: center;
-  }
-  
-  /* Footer */
-  
-  .about-footer {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
-    justify-content: center;
-    grid-gap: 7% 5%;
-    margin: 10% 0 2% 0;
-  }
-  
-  .about-footer-image {
-    grid-column-start: 1;
-    grid-column-end: 7;
-    margin: 0 auto;
-    padding: 0;
-  }
-  
-  .footer-list-item {
-    font-size: 25px;
-    line-height: 80%;
-  }
-  
-  .footer-list-item > a {
-    color: #333;
-  }
-  
-  .footer-list-item > a:hover {
-    text-decoration: none;
-    color: rgb(0, 72, 131);
-  }
-  
-  
-  
-  
-  
-  /* Media Queries */
-  
-  @media only screen and (min-width: 1200px) {
-    * {
-        box-sizing: border-box;
-    }
-  
-    html, body {
-        height: 100%;
-        font-family: Tw Cen MT;
-        scroll-behavior: smooth;
-    }
-  
-    /* Desktop Navigation */
-  
-    .about-nav {
-      position: fixed;
-      width: 100%;
-      z-index: 900;
-    }
-  
-    .about-navigation-list {
-      display: grid;
-      grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
-      grid-column-gap: 0%;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: rgb(255, 255, 255, 1);
-    }
-  
-    .about-navigation-list-logo {
-      padding: 0;
-      margin: 0 auto;
-    }
-  
-    .about-navigation-list-item {
-      padding: 48px 0 0 0;
-      margin: 0 auto;
-      color: #333;
-      text-decoration: none;
-      font-size: 25px;
-      line-height: 80%;
-    }
-  
-    .about-navigation-list-item:hover {
-      color: rgb(0, 72, 131);
-      text-decoration: none;
-    }
-  
-    .about-navigation-list-download {
-      padding: 33px 0 0 0;
-      margin: 0 auto;
-      color: #333;
-      text-decoration: none;
-      font-size: 25px;
-      line-height: 80%;
-    }
-  
-    .about-button-download {
-      color: white;
-      border: none;
-      background-color: #7FB069;
-      border-radius: 5px;
-      padding: 15px 15px;
-      text-align: center;
-      text-decoration: none;
-    }
-  
-    /* Desktop Hero Unit */
-  
-    /* Desktop About Hero Unit */
-  
-    .about-unit-hero {
-      background: linear-gradient( rgba(0, 72, 131, 0.5),  rgba(0, 72, 131, 0.5)), url('../img/about-pavilion.jpg') fixed;
-      background-repeat: no-repeat;
-      background-size: cover;
-      height: 100%;
-      width: 100%;
-      margin: 0;
-    }
-  
-    .about-text-hero {
-      text-align: center;
-      position: absolute;
-      top: 45%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: white;
-    }
-  
-    h1  {
-      font-size: 75px;
-      line-height: 20px;
-    }
-  
-    .subtitle {
-      margin-top: 1em;
-      font-size: 36px;
-      line-height: 39px;
-    }
-  
-    .scrollDown {
-      background-color: rgba(255, 255, 255, 1);
-      -moz-border-radius: 50%;
-      -webkit-border-radius: 50%;
-      border-radius: 50%;
-      width: 60px;
-      text-align: center;
-      display: block;
-      font-size: 3em;
-      color: rgb(46, 46, 46);
-      position: absolute;
-      bottom: 10%;
-      left: 49%;
-    }
-  
-    .glyphicon {
-      top: 10px;
-      left: 1px;
-    }
-  
-    /* Desktop Main Content */
-  
-    h2 {
-      font-size: 50px;
-      line-height: 20px;
-    }
-  
-    h3 {
-      font-size: 50px;
-      line-height: 40px;
-    }
-  
-    /* Desktop About Main Content */
-  
-    #about-container-content {
-      display: grid;
-      grid-template-columns: auto auto auto auto auto auto;
-      grid-gap: 10% 5%;
-      padding: 5% 10% 10% 10%;
-    }
-  
-    .about-goal {
-      padding-right: 15%;
-      grid-column-start: 1;
-      grid-column-end: 4;
-    }
-  
-    .about-paragraph-goal {
-      padding-top: 3%;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 20px;
-      line-height: 110%;
-      letter-spacing: 0.01em;
-      color: #000000;
-    }
-  
-    .about-placeholder {
-      padding: 20% 40% 0% 0%;
-      grid-column-start: 5;
-      grid-column-end: 7;
-    }
-  
-    .about-container-park {
-      grid-column-start: 1;
-      grid-column-end: 3;
-      display: grid;
-      grid-template-columns: auto;
-      grid-gap: 5% 5%;
-    }
-  
-    .about-heading-park {
-      text-align: center;
-    }
-  
-    .about-container-features {
-      grid-column-start: 3;
-      grid-column-end: 5;
-      display: grid;
-      grid-template-columns: auto;
-      grid-gap: 5% 5%;
-    }
-  
-    .about-heading-features {
-      text-align: center;
-    }
-  
-    .about-container-future {
-      grid-column-start: 5;
-      grid-column-end: 7;
-      display: grid;
-      grid-template-columns: auto;
-      grid-gap: 5% 5%;
-    }
-  
-    .about-heading-future {
-      text-align: center;
-    }
-  
-    .about-paragraph-phonedesc {
-      font-style: normal;
-      font-weight: normal;
-      font-size: 20px;
-      line-height: 110%;
-      letter-spacing: 0.01em;
-      text-align: center;
-    }
-  
-    /* Desktop Footer */
-  
-    .austin-footer {
-      display: grid;
-      grid-template-columns: auto auto auto auto auto auto;
-      justify-content: center;
-      grid-gap: 7% 5%;
-      margin: 10% 0 2% 0;
-    }
-  
-    .austin-footer-image {
-      grid-column-start: 1;
-      grid-column-end: 7;
-      margin: 0 auto;
-      padding: 0;
-    }
-  
-    .footer-list-item {
-      font-size: 25px;
-      line-height: 80%;
-    }
-  
-    .footer-list-item > a {
-      color: #333;
-    }
-  
-    .footer-list-item > a:hover {
-      text-decoration: none;
-      color: rgb(0, 72, 131);
-    }
-  }
+
+	.flex-reverse {
+		flex-direction: row-reverse !important;
+	}
+}

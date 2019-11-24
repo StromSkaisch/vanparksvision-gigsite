@@ -1,0 +1,163 @@
+
+
+
+/*Header*/
+
+header {
+    height: 70vh;
+    width: auto;
+    background-image: url(../img/team-hero.png);
+    background-size:contain ;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-shadow: -4px 4px 4px rgba(0, 0, 0, 0.65);
+}
+header .arrow-link {
+	bottom: 35%;
+}
+@media screen and (min-width: 1094px) {
+    header {
+        height: 100vh;
+        width: auto;
+        
+    }
+    header .arrow-link {
+       
+        bottom: 50px;
+    }
+}
+
+/*Main content*/
+.main-bar{
+	max-height: 66px;
+	height:100%;
+	background: #3573B3;
+	max-width:1286px;
+	margin:26px auto auto auto;
+	color:white; 
+	display:grid;
+	grid-template-columns: 4% 2fr 3fr 1fr 4% ;
+    grid-template-areas: ". text . drop .";
+    border-radius:5px;
+}
+.main-bar-text{
+	margin:auto auto auto 4%;
+	grid-area:text;
+}
+.panel {
+	grid-area: panel;
+	padding: 10px 18px;
+	display: none;
+	height:635px;
+    width:auto;
+    text-align: center;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows:1fr auto auto auto auto 1fr;
+    grid-template-areas:". title ."
+                        ". headshot ."
+                        "prev headshot next"
+                        ". headshot ."
+                        ". name ."
+                        ". portfolio .";
+  }
+.panel-title{
+    grid-area:title;
+}
+.panel-wrapper{
+    height:100% ;
+    width:100%;
+    max-width:1286px ;
+    max-height:635px;
+    display:none;
+    grid-auto-columns: auto;
+    margin:auto;
+}
+.name{
+    grid-area:name;
+}
+.portfolio{
+    grid-area:portfolio;
+    background-color: #66A340;
+	box-shadow: none;
+	padding: 10px 20px;
+	color: white;
+	font-family: Tw Cen MT;
+	font-size: 2em;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+    transition: all .3s ease;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+}
+.prev, .next {
+    cursor: pointer;
+    width: auto;
+    padding: 16px;
+    color:black;
+    font-weight: bold;
+    font-size: 3em;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+.next{
+    grid-area: next;
+}
+.prev{
+    grid-area:prev;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.4);
+  }
+.headshot{
+    grid-area:headshot;
+    max-height:462px;
+    width: auto;
+    max-width: 278px;
+    border-radius:10px;
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+.drop{
+	grid-area:drop;
+	border: none;
+	background: none;
+	margin: 0 0 auto 50%;
+	display: block;
+	height: auto;
+	width: auto;
+	cursor: pointer;
+	transition: 0.4s;
+}
+.drop:after {
+    content: '\002B';
+    color:white;
+    font-weight: bold;
+	font: 4em sans-serif;
+	
+}
+.drop.active:after {
+    content: "\2212";
+}
+@media screen and (min-width: 1094px) {
+    .main-bar{
+        grid-template-columns: 41% 2fr 20% 1fr 4% ;
+        grid-template-areas: ". text . drop .";
+    }
+}

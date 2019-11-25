@@ -173,7 +173,7 @@ header {
 header div {
 	height: 100%;
 	width: 100%;
-	background-color: rgba(0, 72, 131, 0.5);;
+	background-color: rgba(0, 72, 131, 0.5);
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -274,7 +274,7 @@ header .arrow-link:hover .down-arrow {
     padding: 5px;
 }
 
-span {
+strong {
     font-weight: bold;
 }
 

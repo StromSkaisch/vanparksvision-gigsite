@@ -1,32 +1,39 @@
 
 
-
+/*Wrapper*/
+#wrapper{
+    height: 100%;
+    width: 100%;
+    margin:auto;
+}
 /*Header*/
 
 header {
-    height: 70vh;
+    height: 45vh;
     width: auto;
     background-image: url(../img/team-hero.png);
     background-size:contain ;
-    background-position: center;
+    background-position:50% 27%;
     background-repeat: no-repeat;
     text-shadow: -4px 4px 4px rgba(0, 0, 0, 0.65);
 }
 header .arrow-link {
-	bottom: 35%;
+	bottom: 55%;
 }
 @media screen and (min-width: 1094px) {
     header {
         height: 100vh;
         width: auto;
-        
+        background-position:center;
     }
     header .arrow-link {
        
         bottom: 50px;
     }
 }
-
+#home-content{
+    padding:0px;
+}
 /*Main content*/
 .main-bar{
 	max-height: 66px;
@@ -115,7 +122,7 @@ header .arrow-link {
     grid-area:headshot;
     max-height:462px;
     width: auto;
-    max-width: 278px;
+    max-width: 240px;
     border-radius:10px;
 }
 .fade {

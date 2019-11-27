@@ -325,9 +325,11 @@
     </footer>
 </div> 
 <script> 
+    //Global Var's
     let acc = document.getElementsByClassName("main-bar");
-    
     let slideIndex = 1;
+
+    //Content Carousel
    showSlides(slideIndex);      
     function plusSlides(n) {
             showSlides(slideIndex += n);
@@ -342,8 +344,112 @@
   for (let i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
   }
-  slides[slideIndex-1].style.display = "grid";
-  console.log(slideIndex)
+
+  if (window.matchMedia("(max-width: 1094px)").matches) {
+    slides[slideIndex-1].style.display = "grid";
+    
+  } else {
+    if(slideIndex<=1){
+        slides[slideIndex-1].childNodes[11].classList.remove("unhide");
+        slides[slideIndex].childNodes[13].classList.remove("unhide");
+        slides[slideIndex].childNodes[11].classList.remove("unhide");
+        slides[slideIndex+1].childNodes[13].classList.add('unhide');
+        
+    }else if(slideIndex<=2){
+        console.log(slideIndex);
+        slides[slideIndex].childNodes[11].classList.remove("unhide");
+        slides[slideIndex].childNodes[13].classList.remove("unhide");
+        slides[slideIndex-1].childNodes[11].classList.add('unhide');
+    }else if(slideIndex<=5){
+        slides[slideIndex-1].childNodes[11].classList.remove("unhide");
+        slides[slideIndex].childNodes[13].classList.remove("unhide");
+        slides[slideIndex].childNodes[11].classList.remove("unhide");
+        slides[slideIndex+1].childNodes[13].classList.add('unhide');
+    }else if(slideIndex<=6){
+        console.log(slideIndex);
+        slides[slideIndex].childNodes[11].classList.remove("unhide");
+        slides[slideIndex].childNodes[13].classList.remove("unhide");
+        slides[slideIndex-1].childNodes[11].classList.add('unhide');
+        slides[slideIndex+1].childNodes[13].classList.add('unhide');
+    }else if(slideIndex<=7){
+        console.log(slideIndex);
+        slides[slideIndex].childNodes[11].classList.remove("unhide");
+        slides[slideIndex].childNodes[13].classList.remove("unhide");
+        slides[slideIndex-1].childNodes[11].classList.add('unhide');
+        
+    }else if(slideIndex<=10){
+        console.log(slideIndex);
+        slides[slideIndex-1].childNodes[11].classList.remove("unhide");
+        slides[slideIndex].childNodes[13].classList.remove("unhide");
+        slides[slideIndex].childNodes[11].classList.remove("unhide");
+        slides[slideIndex+1].childNodes[13].classList.add('unhide');
+    }
+    else if(slideIndex<=11){
+        console.log(slideIndex);
+        slides[slideIndex-1].childNodes[11].classList.add("unhide");
+        slides[slideIndex].childNodes[13].classList.remove("unhide");
+        slides[slideIndex].childNodes[11].classList.remove("unhide");
+        slides[slideIndex+1].childNodes[13].classList.add('unhide');
+    }
+    else if(slideIndex<=12){
+        console.log(slideIndex);
+        slides[slideIndex-1].childNodes[11].classList.add("unhide");
+        slides[slideIndex].childNodes[13].classList.remove("unhide");
+        slides[slideIndex].childNodes[11].classList.remove("unhide");
+        slides[slideIndex+1].childNodes[13].classList.add('unhide');
+    }
+    else if(slideIndex<=13){
+        console.log(slideIndex);
+        slides[slideIndex-1].childNodes[11].classList.add("unhide");
+        slides[slideIndex].childNodes[13].classList.remove("unhide");
+        slides[slideIndex].childNodes[11].classList.remove("unhide");
+    }
+    else if(slideIndex<=16){
+        slides[slideIndex-1].childNodes[11].classList.remove("unhide");
+        slides[slideIndex].childNodes[13].classList.remove("unhide");
+        slides[slideIndex].childNodes[11].classList.remove("unhide");
+        slides[slideIndex+1].childNodes[13].classList.add('unhide');
+    }
+    else if(slideIndex<=17){
+        slides[slideIndex-1].childNodes[11].classList.add("unhide");
+        slides[slideIndex].childNodes[13].classList.remove("unhide");
+        slides[slideIndex].childNodes[11].classList.remove("unhide");
+    }
+    else if(slideIndex<=20){
+        console.log(slideIndex);
+        slides[slideIndex-1].childNodes[11].classList.remove("unhide");
+        slides[slideIndex].childNodes[13].classList.remove("unhide");
+        slides[slideIndex].childNodes[11].classList.remove("unhide");
+        slides[slideIndex+1].childNodes[13].classList.add('unhide');
+    }
+    else if(slideIndex<=21){
+        console.log(slideIndex);
+        slides[slideIndex-1].childNodes[11].classList.add("unhide");
+        slides[slideIndex].childNodes[13].classList.remove("unhide");
+        slides[slideIndex].childNodes[11].classList.remove("unhide");
+        slides[slideIndex+1].childNodes[13].classList.add('unhide');
+    }
+    else if(slideIndex<=22){
+        console.log(slideIndex);
+        slides[slideIndex-1].childNodes[11].classList.add("unhide");
+        slides[slideIndex].childNodes[13].classList.remove("unhide");
+        slides[slideIndex].childNodes[11].classList.remove("unhide");
+        slides[slideIndex+1].childNodes[13].classList.add('unhide');
+    }
+    else if(slideIndex<=23){
+        console.log(slideIndex);
+        slides[slideIndex-1].childNodes[11].classList.add("unhide");
+        slides[slideIndex].childNodes[13].classList.remove("unhide");
+        slides[slideIndex].childNodes[11].classList.remove("unhide");
+
+    }
+    slides[slideIndex-1].style.display = "grid";
+    slides[slideIndex].style.display = "grid";
+    slides[slideIndex+1].style.display = "grid";
+
+  }
+  
+  
  
 }
 
@@ -358,13 +464,13 @@
     
           /* Toggle between hiding and showing the active panel */
           var panel = this.nextElementSibling;
-          if (panel.style.display === "grid") {
+          if (panel.style.display === "flex") {
             panel.style.display = "none";
             showSlides(slideIndex);
 
 
           } else {
-            panel.style.display = "grid";
+            panel.style.display = "flex";
             showSlides(slideIndex);
           }
         });

@@ -71,6 +71,7 @@ header .arrow-link {
 .panel-title{
     grid-area:title;
     font-size: 2em;
+    margin:auto;
 }
 .panel-wrapper{
     height:100% ;

@@ -287,10 +287,16 @@ header .arrow-link:hover .down-arrow {
 	#about-content section {
 		flex-direction: row;
 		width: 80%;
-  	}
+	  }
+	
+	.leaf-motif-frame {
+		padding-left: 15%;
+	}
 
   	#about-content .phone-examples {
-    	flex-direction: row;
+		flex-direction: row;
+		justify-content: center;
+		align-content: center;
  	}
 
 	.flex-reverse {

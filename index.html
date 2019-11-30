@@ -32,7 +32,8 @@
     </nav>
 
     <!-- Header/Hero Unit Area -->
-    <header>
+    <header id="hero">
+        
         <!-- Hero Mask -->
         <div></div>
 
@@ -42,6 +43,24 @@
         <h1>VanParksVision</h1>
         <p>Future Parks At Your Fingertips</p>
         <a class="download-button" href="download/index.html"><button">Download Now</button></a>
+        <!--Video Hero methods and info below
+        Link to article about embeding a video in the hero section: https://howtogetonline.com/how-to-embed-a-hero-background-video.php -->
+
+        <!--5MB is the maximum recommended size for a self-hosted video, files less than 1MB are considered ideal.
+        
+        Runtime can be between 10-30 seconds, this is long enough for a user to become interested and want to see more but short enough that they don't get bored. 
+
+        Link to video used to test this functionality: https://www.youtube.com/embed/bIy6w_iubSs -->
+
+        <!--Self-hosting the video via the DTC server method, may result in slow load times but the "poster" would act as a placeholder till the video loads--> 
+        <!--<video playsinline autoplay muted loop poster="img/home-hero.png" id="bgvideo" width="x" height="y">
+            <source src="img/videoTest.mp4" type="video/mp4">
+        </video>-->
+
+        <!--Youtube Hosting method-->
+            <!--<div class="videoContainer">
+                    <iframe width="x" height="y" src="https://www.youtube.com/embed/bIy6w_iubSs" frameborder="0" allow="accelerometer; autoplay;" ></iframe>
+            </div>-->
     </header>
 
     <!-- Main Content Area -->
@@ -51,7 +70,7 @@
             <img src="img/placeholder.png">
             <article>
                 <h3>About</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>VanParksVision is a mobile app that uses augmented reality to reimagine upcoming Vancouver, Washington parks. The app showcases the changes coming to Vancouver parks and provides information helpful to guests, such as hours, amenities, and accessibility features. Designed to be used by all ages and abilities, the app is interactive, informative, and innovative.</p>
                 <a href="about/index.html"><button class="download-button">Learn More</button></a>
             </article>
         </section>
@@ -60,7 +79,7 @@
             <img src="img/placeholder.png">
             <article>
                 <h3>The Team</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>The teams behind VanParksVision brought a variety of skills & abilities to the app. Teams consisted of Designers, Web & App Developers, Videographers, 3D Modelers, 2D Artists, and Promotional Strategists. Collaboration was key as each team worked to bring the vision of “Future Parks At Your Fingertips” to reality. Take a look at all of the incredible talent each member brought to the project.</p>
                 <a href="team/index.html"><button class="download-button">Meet the Team</button></a>
             </article>
         </section>
@@ -69,7 +88,7 @@
             <img src="img/placeholder.png">
             <article>
                 <h3>Case Study</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>The process of building the VanParksVision app was a task that required thoughtfulness and skillful planning. How could the students showcase park structures that don’t exist? What steps were necessary to make sure the app was accessible? Here, the team documents their journey of discovery and creation in one comprehensive study.</p>
                 <a href="casestudy/index.html"><button class="download-button">See More</button></a>
             </article>
         </section>
@@ -89,7 +108,7 @@
     <footer>
         <img src="img/parks-logo.jfif">
         <ul>
-            <a href='privacypolicy/index.html'><li>Privacy Policy</li></a>
+            <a href='https://www.cityofvancouver.us/law/page/website-privacy-policy'><li>Privacy Policy</li></a>
             <a href='https://www.cityofvancouver.us/parksrec'><li>Parks and Recreation</li></a>
             <a href='https://www.cityofvancouver.us/parksrec/page/project-play'><li>Project Play</li></a>
             <a href='http://dtc-wsuv.org/cmdc/'><li>The CMDC</li></a>

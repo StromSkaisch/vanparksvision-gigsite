@@ -107,7 +107,7 @@ font-family: 'Tw Cen MT';
 font-style: normal;
 font-weight: bold;
 font-size: 4em;
-line-height: 1;
+line-height: 2;
 }
 
 h4 {
@@ -115,7 +115,7 @@ font-family: 'Tw Cen MT';
 font-style: normal;
 font-weight: bold;
 font-size: 2.5em;
-line-height: 1;
+line-height: 2;
 }
 
 h5 {
@@ -214,8 +214,52 @@ header .down-arrow {
 header .arrow-link:hover .down-arrow {
 	fill: #3573B3;
 }
+/* Self-hosting method CSS code below */
+video#bgvideo {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	background: url(/img/home-hero.png) no-repeat;
+	background-size: cover;
+}
+
+/* Youtube video hosting */
+.videoContainer {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+/*#hero may need to be removed if it interferes too much with other elements*/
+#hero {
+	position: relative;
+}
+
+iframe {
+	width: 100%;
+	height: 100%;
+}
 
 
+
+/*If we go ahead with embeding a video in the hero of the homepage we may need to remove the background-image property below
+*/
 @media screen and (min-width: 1094px) {
 	header {
 		height: 100vh;
@@ -270,3 +314,16 @@ header .arrow-link:hover .down-arrow {
 		flex-direction: row-reverse !important;
 	}
 }
+
+/* Media Query method for removing the video from the hero section and placing the still image*/
+/*
+@media screen and (max-device-width: 768px) {
+	#hero {
+	background: url(/img/home-hero.png) no-repeat;
+	background-size: cover;
+	}
+	#bgvideo {
+	display: none;
+	}
+}
+*/

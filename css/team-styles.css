@@ -24,6 +24,7 @@ header .arrow-link {
     header {
         height: 100vh;
         width: auto;
+        background-size: cover;
         background-position:center;
     }
     header .arrow-link {

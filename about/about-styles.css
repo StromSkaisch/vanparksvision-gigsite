@@ -158,7 +158,7 @@ color: inherit;
 header {
 	height: 100vh;
 	width: 100%;
-	background-image: url(../img/about-pavilion.png);
+	background-image: url(../img/about-hero.png);
 	background-size: cover;
 	background-position: -300px;
 	background-repeat: no-repeat;
@@ -173,7 +173,7 @@ header {
 header div {
 	height: 100vh;
 	width: 100%;
-	background-color: rgba(0, 72, 131, 0.5);;
+	background-color: rgba(0, 72, 131, 0.5);
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -222,7 +222,7 @@ header .arrow-link:hover .down-arrow {
 	header {
 		height: 100vh;
 		width: 100%;
-		background-image: url(../img/about-pavilion.png);
+		background-image: url(../img/about-hero.png);
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -279,7 +279,7 @@ header .arrow-link:hover .down-arrow {
   max-width: 423px;
 }
 
-.leaf-motif-frame {
+#about-content section .leaf-motif-frame {
   max-width: 260px;
 }
 
@@ -287,11 +287,17 @@ header .arrow-link:hover .down-arrow {
 	#about-content section {
 		flex-direction: row;
 		width: 80%;
-  }
+	  }
+	
+	.leaf-motif-frame {
+		padding-left: 15%;
+	}
 
-  #about-content .phone-examples {
-    flex-direction: row;
-  }
+  	#about-content .phone-examples {
+		flex-direction: row;
+		justify-content: center;
+		align-content: center;
+ 	}
 
 	.flex-reverse {
 		flex-direction: row-reverse !important;

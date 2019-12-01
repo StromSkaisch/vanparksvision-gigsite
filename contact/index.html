@@ -1,42 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset='utf-8'>
-
-    <meta name='home' content='home-page' initial-scale='1'>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>VanParksVision</title>
 
-    <link type='text/css' rel='stylesheet' href='css/styles.css'>
-    <link type='text/css' rel='stylesheet' href='css/animate.css-master/animate.css'>
+    <link type='text/css' rel='stylesheet' href='contact-styles.css'>
+    <link type='text/css' rel='stylesheet' href='../css/navigation.css'>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
+</head>    
 
 <body>
-
+<div id="wrapper">
     <!-- Navigation Area -->
     <nav>
-        <ul>
-            <li class='left'><a href='index.html'><img src='vanparkstitle-placeholder'></a></li> <!-- Title Image/Text -->
-            <li><a href='about/index.html'>About</a></li>
-            <li><a href='contact/index.html'>Contact</a></li>
-            <li><a href='download/index.html'>Download</a></li>
+        <div>
+            <a href="../index.html"><img id="logo" src="../img/logo-horizontal.svg"></a>
+            <img id="mobile-menu-icon" src="../img/mobile-menu.svg">
+        </div>
+        <ul id="mobile-menu">
+            <a href='../about/index.html'><li>About</li></a>
+            <a href='../faq/index.html'><li>FAQ</li></a>
+            <a href='../contact/index.html'><li>Contact</li></a>
+            <a href='../team/index.html'><li>Team</li></a>
+            <a href='../casestudy/index.html'><li>Case Study</li></a>
+            <a href="../download/index.html"><li><button class="download-button">Download</button></li></a>
         </ul>
     </nav>
 
     <!-- Header/Hero Unit Area -->
-     <div class='hero-unit'>
-        <div class='hero-content'>
-            <h1></h1>
-        </div>
-    </div>
+    <header>
+        <!-- Hero Mask -->
+        <div></div>
+
+        <!-- Hero Arrow -->
+        <a class="arrow-link" href="#contact-content"><svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 438.53 438.53"><defs></defs><title>down-arrow</title><path class="down-arrow" d="M409.13,109.2a218.26,218.26,0,0,0-79.8-79.79Q278.95,0,219.27,0T109.21,29.41a218.26,218.26,0,0,0-79.8,79.79Q0,159.6,0,219.27T29.41,329.33a218.29,218.29,0,0,0,79.8,79.8q50.39,29.4,110.06,29.4t110.06-29.4a218.36,218.36,0,0,0,79.8-79.8q29.4-50.4,29.4-110.06T409.13,109.2Zm-47.4,95.51L232.12,334.32a17.92,17.92,0,0,1-25.7,0L76.8,204.71a17.94,17.94,0,0,1,0-25.7l29.12-29.12a17.92,17.92,0,0,1,25.7,0l87.65,87.65,87.65-87.65a17.91,17.91,0,0,1,25.69,0L361.74,179a17.91,17.91,0,0,1,0,25.7Z"/></svg></a>
+
+        <h1>Contact</h1>
+        <p>If you have concerns or further questions, please contact us.</p>
+    </header>
 
     <!-- Main Content Area -->
-    <section>
-    </section>
-    <section>
-    </section>
+    <div id="contact-content">
+        <!-- Offices -->
+        <section>
+            <h3>Offices</h3>
+            <article>
+                <p><strong>Mailing Address:</strong><br> Vancouver Parks & Recreation<br> PO Box 1995<br> Vancouver, WA 98668-1995</p>
+            </article>
+            <article>
+                <p><strong>Administrative Offices:</strong><br> City Hall<br> 415 W. Sixth St.<br> Vancouver, WA 98660</p>
+            </article>
+        </section>
+        <!-- Social Media -->
+        <section>
+            <h3>Social Media</h3>
+            <article>
+                <a href=''><img class='social' src='../img/twitter-icon.png'></a>
+                <a href=''><img class='social' src='../img/facebook-icon.png'></a>
+                <a href=''><img class='social' src='../img/instagram-icon.png'></a>
+            </article>
+            <article>
+                <p><strong>Email:</strong><br> parksrec@cityofvancouver.us</p>
+            </article>
+            <article>
+                <p><strong>Phone:</strong><br> Main Line (Parks & Administration):<br> 360-487-8311</p>
+            </article>
+        </section>
+    </div>
 
     <!-- Footer Area -->
     <footer>
+        <img src="../img/parks-logo.jfif">
+        <ul>
+            <a href='privacypolicy/index.html'><li>Privacy Policy</li></a>
+            <a href='https://www.cityofvancouver.us/parksrec'><li>Parks and Recreation</li></a>
+            <a href='https://www.cityofvancouver.us/parksrec/page/project-play'><li>Project Play</li></a>
+            <a href='http://dtc-wsuv.org/cmdc/'><li>The CMDC</li></a>
+        </ul>
     </footer>
+</div> 
+
+<script src="../js/scripts.js"></script><!-- Closes Wrapper -->
 </body>
 </html>

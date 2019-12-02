@@ -107,7 +107,7 @@ font-family: 'Tw Cen MT';
 font-style: normal;
 font-weight: bold;
 font-size: 4em;
-line-height: 2;
+line-height: 1.2;
 }
 
 h4 {
@@ -250,11 +250,16 @@ header .arrow-link:hover .down-arrow {
 #about-content section img {
 	align-self: center;
 	width: 100%;
+	padding: 20px;
 }
 
 #about-content section article {
 	font-size: .7em;
 	padding: 50px;
+}
+
+#about-content section article p {
+	padding-top: 40px;
 }
 
 #about-content section article button {
@@ -263,20 +268,20 @@ header .arrow-link:hover .down-arrow {
 }
 
 #about-content .phone-examples {
-  display: flex;
-  flex-direction: column;
+  	display: flex;
+  	flex-direction: column;
 }
 
 #about-content section div {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  font-size: .7em;
-	padding: 20px;
+  	display: flex;
+  	flex-direction: column;
+  	text-align: center;
+  	font-size: .7em;
+	padding: 60px 20px;
 }
 
 #about-content section img {
-  max-width: 423px;
+  max-width: 300px;
 }
 
 #about-content section .leaf-motif-frame {

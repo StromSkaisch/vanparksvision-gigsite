@@ -177,25 +177,25 @@ header div {
 	position: absolute;
 	top: 0;
 	left: 0;
-	z-index: 0;
+	z-index: 1;
 }
 
 header h1 {
-	z-index: 1;
+	z-index: 2;
 	font-size: 3em;
 	line-height: 1;
 	text-shadow: 3px -3px rgba(0,0,0,.25);
 }
 
 header p {
-	z-index: 1;
+	z-index: 2;
 	text-align: center;
 	line-height: 1;
 	text-shadow: 2px -2px rgba(0,0,0,.25);
 }
 
 header .download-button {
-	z-index: 1;
+	z-index: 2;
 	margin-top: 40px;
 	font-size: 1.8em;
 	font-weight: 300;
@@ -203,7 +203,7 @@ header .download-button {
 
 header .arrow-link {
 	position: absolute;
-	z-index: 1;
+	z-index: 2;
 	width: 50px;
 	bottom: 50px;
 }
@@ -215,23 +215,6 @@ header .down-arrow {
 
 header .arrow-link:hover .down-arrow {
 	fill: #3573B3;
-}
-/* Self-hosting method CSS code below */
-video#bgvideo {
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	min-width: 100%;
-	min-height: 100%;
-	width: auto;
-	height: auto;
-	z-index: -100;
-	-ms-transform: translateX(-50%) translateY(-50%);
-	-moz-transform: translateX(-50%) translateY(-50%);
-	-webkit-transform: translateX(-50%) translateY(-50%);
-	transform: translateX(-50%) translateY(-50%);
-	background: url(/img/home-hero.png) no-repeat;
-	background-size: cover;
 }
 
 /* Youtube video hosting */
@@ -247,6 +230,8 @@ video#bgvideo {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	overflow: hidden;
+	z-index: 0;
 }
 /*#hero may need to be removed if it interferes too much with other elements*/
 #hero {
@@ -254,8 +239,8 @@ video#bgvideo {
 }
 
 iframe {
-	width: 100%;
-	height: 100%;
+	width: 105%;
+	height: 105%;
 }
 
 

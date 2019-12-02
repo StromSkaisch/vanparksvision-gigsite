@@ -239,8 +239,8 @@ header .arrow-link:hover .down-arrow {
 }
 
 iframe {
-	width: 105%;
-	height: 105%;
+	width: 100%;
+	height: 100%
 }
 
 

@@ -280,12 +280,16 @@ header .arrow-link:hover .down-arrow {
 	padding: 60px 20px;
 }
 
+#about-content section div p {
+	font-size: 1.6em;
+}
+
 #about-content section img {
   max-width: 300px;
 }
 
 #about-content section .leaf-motif-frame {
-  max-width: 260px;
+	max-width: 180px;
 }
 
 @media screen and (min-width: 1094px) {
@@ -306,5 +310,10 @@ header .arrow-link:hover .down-arrow {
 
 	.flex-reverse {
 		flex-direction: row-reverse !important;
+	}
+
+	#about-content section .leaf-motif-frame {
+		max-width: 180px;
+		padding: 0 8% 0 15%;
 	}
 }

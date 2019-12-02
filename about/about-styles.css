@@ -289,7 +289,8 @@ header .arrow-link:hover .down-arrow {
 }
 
 #about-content section .leaf-motif-frame {
-	max-width: 180px;
+	max-width: 260px;
+	margin-left: 10%;
 }
 
 @media screen and (min-width: 1094px) {
@@ -314,6 +315,5 @@ header .arrow-link:hover .down-arrow {
 
 	#about-content section .leaf-motif-frame {
 		max-width: 180px;
-		padding: 0 8% 0 15%;
 	}
 }

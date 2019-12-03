@@ -479,21 +479,21 @@ header .hero-screenshot2 {
 
 @media screen and (min-width: 1094px) {
 
-    #casestudy-content .tech-section article {
+    #casestudy-content .tech-section .tech-article {
         display: flex;
         flex-direction: row;
     }
 
-    #casestudy-content .tech-section article .extra-pad {
+    #casestudy-content .tech-section .tech-article .extra-pad {
         padding-bottom: 100px;
     }
 
-    #casestudy-content .tech-section article .extra-margin {
+    #casestudy-content .tech-section .tech-article .extra-margin {
         margin-top: 100px;
         padding-bottom: 32px;
      }
 
-    #casestudy-content .tech-section article .extra-margin2 {
+    #casestudy-content .tech-section .tech-article .extra-margin2 {
        margin-top: 100px;
        padding-bottom: 25px;
     }

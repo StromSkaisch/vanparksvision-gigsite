@@ -290,7 +290,11 @@ header .arrow-link:hover .down-arrow {
 }
 
 strong {
-    font-weight: bold;
+    font-family: 'Tw Cen MT';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1.4em;
+	line-height: 1.2em;
 }
 
 @media screen and (min-width: 1094px) {

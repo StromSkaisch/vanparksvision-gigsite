@@ -1,0 +1,314 @@
+/* Universal */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+button:focus {
+	outline: none;
+}
+
+button:active {
+	outline: none;
+}
+
+/*End of reset*/
+
+@font-face {
+	font-family: 'Tw Cen MT';
+	src: url(../fonts/twcent.TTF);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+
+/* --Body Copy-- */
+body {
+font-size: 16px;
+font-family: 'Didact Gothic';
+letter-spacing: .5px;
+}
+
+p {	
+font-style: normal;
+font-weight: normal;
+font-size: 2em;
+line-height: 1.75em;
+letter-spacing: .5px; 
+}
+
+
+/* --Headings-- */
+h1 {
+font-family: 'Tw Cen MT';
+font-style: normal;
+font-weight: bold;
+font-size: 7.5em;
+line-height: 2;
+}
+
+h2 {
+font-family: 'Tw Cen MT';
+font-style: normal;
+font-weight: bold;
+font-size: 5em;
+line-height: 2;
+}
+
+h3 {
+font-family: 'Tw Cen MT';
+font-style: normal;
+font-weight: bold;
+font-size: 4em;
+line-height: 2;
+}
+
+h4 {
+font-family: 'Tw Cen MT';
+font-style: normal;
+font-weight: bold;
+font-size: 2.5em;
+line-height: 2;
+}
+
+h5 {
+font-family: 'Tw Cen MT';
+font-style: normal;
+font-weight: bold;
+font-size: 2em;
+line-height: 2;
+}
+
+a {
+font-weight: bold;
+text-decoration: none;
+color: inherit;
+}
+
+a:visited {
+color: inherit;
+}
+
+.download-button {
+	background-color: #66A340;
+	box-shadow: none;
+	padding: 10px 20px;
+	color: white;
+	font-family: Tw Cen MT;
+	font-size: 1em;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	transition: all .3s ease;
+}
+
+.download-button:hover {
+	background-color: #3573B3;
+}
+
+
+/* -- Hero Unit/Header -- */
+header {
+	height: 100vh;
+	width: 100%;
+	background-color: #004883;
+	background-size: cover;
+	background-position: -300px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+header h1 {
+	z-index: 1;
+	font-size: 3em;
+	line-height: 1;
+    text-shadow: 3px -3px rgba(0,0,0,.25);
+}
+
+header p {
+	z-index: 1;
+	text-align: center;
+	line-height: 1;
+    text-shadow: 2px -2px rgba(0,0,0,.25);
+    margin-bottom: 25%;
+}
+
+header .download-button {
+	z-index: 1;
+	margin-top: 40px;
+	font-size: 1.8em;
+	font-weight: 300;
+}
+
+header .arrow-link {
+	position: absolute;
+	z-index: 1;
+	width: 50px;
+	bottom: 50px;
+}
+
+header .down-arrow {
+	fill: white;
+	transition: fill .3s ease;
+}
+
+header .arrow-link:hover .down-arrow {
+	fill: #3573B3;
+}
+
+header .casestudy-logo {
+    position: absolute;
+    z-index: -250px;
+    bottom: 0;
+    max-width: 100%;
+}
+
+header .hero-screenshot {
+    position: absolute;
+    z-index: -200px;
+    bottom: 0;
+    left: 15%;
+    max-width: 50%;
+}
+
+header .hero-screenshot2 {
+    position: absolute;
+    z-index: -150px;
+    bottom: 0;
+    left: 35%;
+    max-width: 50%;
+}
+
+@media screen and (min-width: 1094px) {
+	header {
+		height: 100vh;
+		width: 100%;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}	
+
+	header h1 {
+		font-size: 5em;
+		letter-spacing: 1px;
+    }
+    
+    header .hero-screenshot {
+        left: 32%;
+    }
+
+    header .hero-screenshot2 {
+        left: 45%;
+    }
+}
+
+
+/* -- Case Study Content -- */
+
+#casestudy-content section {
+    height: 100vh;
+	width: 100%;
+	background-size: cover;
+	background-position: -300px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+    margin: 100px auto;
+    color: white;
+}
+
+#casestudy-content .introduction {
+    background-image: url('../img/casestudy-intro-bg.png');
+}
+
+#casestudy-content .promotions {
+    background-image: url('../img/casestudy-intro-bg.png');
+}
+
+#casestudy-content .green-bg {
+    background-color: #66A340;
+}
+
+#casestudy-content .blue-bg {
+    background-color: #004883;
+}
+
+#casestudy-content .white-bg {
+    background-color: #F0F0F0;
+}
+
+#casestudy-content section img {
+	align-self: center;
+	width: 100%;
+}
+
+#casestudy-content section article {
+	font-size: .7em;
+	padding: 60px;
+}
+
+#casestudy-content section article button {
+	margin-top: 25px;
+	font-size: 2em;
+}
+
+@media screen and (min-width: 1094px) {
+
+	.flex-reverse {
+		flex-direction: row-reverse !important;
+	}
+}

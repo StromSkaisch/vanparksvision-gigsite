@@ -61,7 +61,7 @@ header .arrow-link {
     max-width: 475px;
     text-align: center;
     grid-template-columns:1fr 1fr 1fr;
-    grid-template-rows:1fr auto auto auto auto 1fr;
+    grid-template-rows:1fr auto auto auto 40px 1fr;
     grid-template-areas:". title ."
                         ". headshot ."
                         "prev headshot next"
@@ -73,6 +73,7 @@ header .arrow-link {
     grid-area:title;
     font-size: 2em;
     margin:auto;
+    line-height: 1;
 }
 .panel-wrapper{
     height:100% ;
@@ -88,12 +89,12 @@ header .arrow-link {
 .name{
     grid-area:name;
     font-size: 1.5em;
+    
 }
 .portfolio{
     grid-area:portfolio;
     background-color: #66A340;
 	box-shadow: none;
-	padding: 10px 20px;
 	color: white;
 	font-family: Tw Cen MT;
 	font-size: 2em;
@@ -103,7 +104,8 @@ header .arrow-link {
     transition: all .3s ease;
     width: 70%;
     text-align: center;
-    margin: auto;
+    margin: 0 auto 0 auto;
+    max-height: 40px;
 }
 .prev, .next {
     cursor: pointer;

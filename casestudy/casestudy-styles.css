@@ -98,8 +98,9 @@ h2 {
 font-family: 'Tw Cen MT';
 font-style: normal;
 font-weight: bold;
-font-size: 5em;
+font-size: 3.5em;
 line-height: 2;
+padding: 60px 60px 0px 60px;
 }
 
 h3 {
@@ -258,16 +259,13 @@ header .hero-screenshot2 {
 /* -- Case Study Content -- */
 
 #casestudy-content section {
-    height: 100vh;
 	width: 100%;
 	background-size: cover;
-	background-position: -300px;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-    margin: 100px auto;
     color: white;
 }
 
@@ -289,11 +287,17 @@ header .hero-screenshot2 {
 
 #casestudy-content .white-bg {
     background-color: #F0F0F0;
+    color: black;
+}
+
+#casestudy-content section h2 {
+    text-align: center;
+    line-height: 1.2em;
 }
 
 #casestudy-content section img {
-	align-self: center;
-	width: 100%;
+    max-width: 80%;
+    padding: 30px;
 }
 
 #casestudy-content section article {
@@ -306,9 +310,306 @@ header .hero-screenshot2 {
 	font-size: 2em;
 }
 
+#casestudy-content section .heading-left {
+    text-align: left;
+    padding: 0;
+    padding: 20px 0 20px 0;
+    font-size: 5em;
+}
+
 @media screen and (min-width: 1094px) {
 
-	.flex-reverse {
-		flex-direction: row-reverse !important;
-	}
+}
+
+/* Introduction */
+
+#casestudy-content section .intro-article {
+    background-color: #F0F0F0;
+    color: black;
+    padding-top: 15px;
+}
+
+@media screen and (min-width: 1094px) {
+
+    #casestudy-content .introduction {
+        height: 100vh;
+    }
+
+    .intro-article {
+        margin: 17% 25% 10% 7%;
+        border-radius: 5px;
+    }
+}
+
+/* Challenges */
+
+
+#casestudy-content .challenge-section div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: .7em;
+}
+#casestudy-content .challenge-section img {
+    padding: 20px 20px 60px 20px;
+}
+
+#casestudy-content .challenge-section div p {
+    padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1094px) {
+
+    #casestudy-content .challenge-section article {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #casestudy-content .challenge-section .challenge-div-left {
+        text-align: right;
+        width: 23%;
+        padding-left: 6%;
+    }
+
+    #casestudy-content .challenge-section .challenge-div-right {
+        text-align: left;
+        width: 33%;
+    }
+
+    #casestudy-content .challenge-section img {
+        padding: 60px;
+    }
+
+    #casestudy-content .challenge-section div p {
+        font-family: Didact Gothic;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 110%;
+        letter-spacing: 0.01em;
+    }
+
+    #casestudy-content .challenge-section img {
+        min-width: 300px;
+    }
+
+}
+
+/* App Features */
+
+#casestudy-content .app-section article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+#casestudy-content .app-section article div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 33%;
+    padding: 60px;
+}
+
+#casestudy-content .app-section article div aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+#casestudy-content .app-section img {
+    padding: 20px;
+    max-width: 86px;
+}
+
+@media screen and (min-width: 1094px) {
+
+    #casestudy-content .app-section article {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+    }
+
+    #casestudy-content .app-section article div aside {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+    }
+
+    #casestudy-content .app-section p {
+        font-family: Didact Gothic;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 110%;
+        letter-spacing: 0.01em;
+    }
+}
+/* Tech Stack */
+
+#casestudy-content .tech-section .tech-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+#casestudy-content .tech-section .tech-article div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#casestudy-content .tech-section .tech-article div img {
+    padding: 30px 10px 30px 10px;
+}
+
+#casestudy-content .tech-section .tech-article div h2 {
+    padding: 0px 60px 100px 60px;
+}
+
+@media screen and (min-width: 1094px) {
+
+    #casestudy-content .tech-section article {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #casestudy-content .tech-section article .extra-pad {
+        padding-bottom: 100px;
+    }
+
+    #casestudy-content .tech-section article .extra-margin {
+        margin-top: 100px;
+        padding-bottom: 32px;
+     }
+
+    #casestudy-content .tech-section article .extra-margin2 {
+       margin-top: 100px;
+       padding-bottom: 25px;
+    }
+}
+/* The Architecture */
+
+#casestudy-content section .architecture-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#casestudy-content section .architecture-article {
+    padding: 60px 10px 60px 10px;
+}
+
+#casestudy-content section .architecture-article img {
+    min-width: 250px;
+}
+
+@media screen and (min-width: 1094px) {
+    #casestudy-content section .architecture-article img {
+        padding-top: 60px;
+        min-width: 250px;
+    }
+}
+
+/* Design Section */
+
+#casestudy-content section .design-article img {
+    padding: 30px 10px 30px 10px;
+}
+
+@media screen and (min-width: 1094px) {
+
+    #casestudy-content .design-section {
+        height: 100vh;
+    }
+
+    #casestudy-content section .design-article {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 150px;
+    }
+}
+
+/* Mood Styling */
+
+#casestudy-content .mood-section {
+    height: 100vh;
+}
+
+/* Interactive Experience */
+
+#casestudy-content .interactive-section {
+    height: 100vh;
+}
+
+#casestudy-content section .interactive-article {
+    color: black;
+}
+
+/* Promotions */
+
+#casestudy-content section .promotions-article {
+    background-color: #F0F0F0;
+    color: black;
+    padding-top: 30px;
+}
+
+@media screen and (min-width: 1094px) {
+
+    #casestudy-content .promotions {
+        height: 100vh;
+    }
+
+    .promotions-article {
+        margin: 13% 7% 8% 25%;
+        border-radius: 5px;
+    }
+}
+
+/* Results */
+
+#casestudy-content .results-section article {
+    padding-bottom: 0;
+}
+
+#casestudy-content .results-section .results-article {
+    padding-bottom: 60px;
+}
+
+#casestudy-content .results-section article p {
+    padding-bottom: 25px;
+}
+
+#casestudy-content .results-section img {
+	align-self: center;
+	padding: 20px;
+}
+
+@media screen and (min-width: 1094px) {
+
+#casestudy-content .results-section article p {
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+    #casestudy-content .results-section .results-article {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
 }

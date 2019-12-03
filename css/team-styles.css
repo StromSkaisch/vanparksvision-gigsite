@@ -48,8 +48,9 @@ header .arrow-link {
     border-radius:5px;
 }
 .main-bar-text{
-	margin:auto auto auto 4%;
-	grid-area:text;
+	margin:auto auto auto 3%;
+    grid-area:text;
+
 }
 .panel {
 	grid-area: panel;
@@ -173,8 +174,12 @@ header .arrow-link {
 }
 @media screen and (min-width: 1094px) {
     .main-bar{
-        grid-template-columns: 41% 2fr 20% 1fr 4% ;
+        grid-template-columns: 39% 2fr 25% 1fr 4% ;
         grid-template-areas: ". text . drop .";
+    }
+    .main-bar-text{
+        margin:auto;
+        text-align: center;
     }
     .panel-wrapper{
         margin:auto;

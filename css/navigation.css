@@ -1,0 +1,159 @@
+
+/* --Navigation-- */
+
+nav {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	background-color: white;
+	width: 100%;
+	box-shadow: 0 4px 4px -4px rgba(0,0,0,.25);
+	z-index: 999;
+}
+
+nav div {
+	display: flex; 
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 0px 20px 0px 0px;
+	align-items: center;
+	background-color: white;
+	z-index: 1;
+}
+
+nav div a {
+	justify-content: flex-start;
+}
+
+nav #mobile-menu-icon  {
+	width: 50px;
+	cursor: pointer;
+}
+
+nav ul {
+	position: absolute;
+	top: 100%;
+	display: none;
+	flex-direction: column;
+	width: 100%;
+	background-color: #F8F8F8;
+	z-index: 0;
+	height: 90vh;
+	padding-top: 40px;
+}
+
+nav a {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding: 15px 40px 15px 0px;
+	font-family: Tw Cen MT;
+	font-size: 2.75em;
+	transition: color .3s ease;
+}
+
+nav a:hover {
+	color: #3573B3;
+}
+
+nav a:last-of-type {
+	border-bottom: none;
+}
+
+
+@media screen and (min-width: 1094px) {
+	nav {
+		display: flex;
+		flex-direction: row;
+		height: auto;
+		align-items: center;
+		padding: 35px 0px 35px 0px;
+	}
+
+	nav #mobile-menu-icon {
+		display: none;
+	}
+
+	nav #logo {
+		position: absolute;
+		left: 30px;
+		top: 7px;
+		width: 325px;
+	}
+
+	nav ul {
+		display: flex;
+		position: relative;
+		height: auto;
+		width: auto;
+		flex-direction: row;
+		background-color: inherit;
+		padding-top: 0;
+	}
+
+	nav a {
+		font-size: 1.4em;
+		padding: 0;
+		margin-right: 50px;
+		border: none;
+	}
+}
+
+@media screen and (min-width: 1400px) { 
+	nav a {
+		font-size: 1.75em;
+	}
+
+	nav #logo {
+		width: 350px;
+	}
+}
+
+
+/* -- Footer -- */
+footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 50px;
+}
+
+footer img {
+	width: 300px;
+	margin-bottom: 40px;
+}
+
+footer ul {
+	display: flex;
+	flex-direction: column;
+}
+
+footer a {
+	color: inherit;
+	font-family: 'Tw Cen MT';
+	font-size: 1.5em;
+	transition: color .3s ease;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+footer a:hover {
+	color: #3573B3;
+}
+
+footer a:last-of-type {
+	margin-right: 0;
+}
+
+
+@media screen and (min-width: 1094px) {
+	footer ul {
+		flex-direction: row;
+	}
+
+	footer a {
+		margin-right: 50px;
+	}
+}

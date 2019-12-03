@@ -1,86 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset='utf-8'>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta name="viewport" content="width=device-width" initial-scale="1">
+    <title>VanParksVision | FAQ</title>
 
-    <title>VanParksVision</title>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link type='text' rel='stylesheet' href='../css/animate.css-master/animate.css'>
     <link type='text/css' rel='stylesheet' href='faq-styles.css'>
-</head>
-<body class='faq-body'>
+    <link type='text/css' rel='stylesheet' href='../css/navigation.css'>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
+</head>    
+
+<body>
+<div id="wrapper">
     <!-- Navigation Area -->
-    <nav class='austin-nav'>
-        <div class='austin-navigation-list'>
-            <a class='austin-navigation-list-logo' href='../index.html'><img src='../img/austin-logo-draft.png'></a> <!-- Title Image/Text -->
-            <div class='austin-navigation-list-item'></div>
-            <div class='austin-navigation-list-item'></div>
-            <div class='austin-navigation-list-item'></div>
-            <div class='austin-navigation-list-item'></div>
-            <div class='austin-navigation-list-item'></div>
-            <div class='austin-navigation-list-item'></div>
-            <div class='austin-navigation-list-item'></div>
-            <div class='austin-navigation-list-item'></div>
-            <div class='austin-navigation-list-item'></div>
-            <a class='austin-navigation-list-item' href='../faq/index.html'>About</a>
-            <a class='austin-navigation-list-item' href='../faq/index.html'>FAQ</a>
-            <a class='austin-navigation-list-item' href='../contact/index.html'>Contact</a>
-            <a class='austin-navigation-list-item' href='../team/index.html'>Credits</a>
-            <a class='austin-navigation-list-item' href='../casestudy/'>Case Study</a>
-            <a class='austin-navigation-list-download' href='../download/index.html'><button class='austin-button-download'>Download</button></a>
+    <nav>
+        <div>
+            <a href="../index.html"><img id="logo" src="../img/logo-horizontal.svg"></a>
+            <img id="mobile-menu-icon" src="../img/mobile-menu.svg">
         </div>
+        <ul id="mobile-menu">
+            <a href='../about/index.html'><li>About</li></a>
+            <a href='../faq/index.html'><li>FAQ</li></a>
+            <a href='../contact/index.html'><li>Contact</li></a>
+            <a href='../team/index.html'><li>Team</li></a>
+            <a href='../casestudy/index.html'><li>Case Study</li></a>
+            <a href="../download/index.html"><li><button class="download-button">Download</button></li></a>
+        </ul>
     </nav>
 
     <!-- Header/Hero Unit Area -->
-    <header class='faq-unit-hero'>
-        <div class='faq-text-hero'>
-            <h1>FAQ</h1>
-            <p class='subtitle'>You have questions, we have answers.</p>
-        </div>
-        <a data-scroll href='#faq-container-content' class='scrollDown scrollToContent'>
-			<span class='glyphicon glyphicon-chevron-down'></span>
-        </a>
+    <header>
+        <!-- Hero Mask -->
+        <div></div>
+
+        <!-- Hero Arrow -->
+        <a class="arrow-link" href="#faq-content"><svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 438.53 438.53"><defs></defs><title>down-arrow</title><path class="down-arrow" d="M409.13,109.2a218.26,218.26,0,0,0-79.8-79.79Q278.95,0,219.27,0T109.21,29.41a218.26,218.26,0,0,0-79.8,79.79Q0,159.6,0,219.27T29.41,329.33a218.29,218.29,0,0,0,79.8,79.8q50.39,29.4,110.06,29.4t110.06-29.4a218.36,218.36,0,0,0,79.8-79.8q29.4-50.4,29.4-110.06T409.13,109.2Zm-47.4,95.51L232.12,334.32a17.92,17.92,0,0,1-25.7,0L76.8,204.71a17.94,17.94,0,0,1,0-25.7l29.12-29.12a17.92,17.92,0,0,1,25.7,0l87.65,87.65,87.65-87.65a17.91,17.91,0,0,1,25.69,0L361.74,179a17.91,17.91,0,0,1,0,25.7Z"/></svg></a>
+
+        <h1>FAQ</h1>
+        <p>You have questions, we have answers</p>
     </header>
 
     <!-- Main Content Area -->
-    <section>
-        <p>Question 1 The Clark County Historical Museum provides 
-            this service to you subject to the following conditions. 
-            If you use this app, you accept these conditions. 
-            Please read them carefully.</p>
-        <p>Question 2 Please review our Privacy Notice, 
-            which also governs your visit to our website, 
-            to understand our practices.</p> 
-        <p>Question 3 Questions regarding our Conditions of Usage, Privacy Policy, 
-            or other policy related material can be directed to our support staff 
-            by clicking on the “Contact Us” link in the menu. 
-            Or you can email us at: info@cchmuseum.org.</p>
-        <p>Information Collection and Use 
-            All your information are belong to us.</p>
-        <p>
-            Cookies 
-            Cookies are files with a small amount of data that are commonly 
-            used as anonymous unique identifiers. 
-            Quite tasty.</p>
-    </section>
-    <section>
-        <p></p>
-        <a href='../contact/index.html'><button class='faq-button'>Get in Touch</button></a>
-    </section>
+    <div id="faq-content">
+        <!-- FAQ -->
+        <section>
+            <article>
+                <p><strong>What is the purpose of this app?</strong><br> The VanParksVision app allows users to experience future changes to Vancouver parks as well as learn about various details such as amenities, accessibility, and key features.</p>
+            </article>
+            <article>
+                <p><strong>How do I start using the app?</strong><br> Clicking the download button at the top of this page will take you to your device’s app store or market. From there, you can download and install the app. After it is fully installed, you can access the app from the applications section of your device.</p>
+            </article>
+            <article>
+                <p><strong>How do I download the app?</strong><br> You can download the VanParksVision app in your device’s app store or market. It is also available via the home page and navigation bar at vanparksvision.com.</p>
+            </article>
+            <article>
+                <p><strong>Do I need to pay for this app?</strong><br> The VanParksVision app does not have a paid entry requirement.</p>
+            </article>
+            <article>
+                <p><strong>What if I encounter a technical issue or see an error message?</strong><br> You can contact us directly through our email, phone number, or at our administrative offices for any technical questions or concerns. Any noticeable problems will be fixed as soon as possible.</p>
+            </article>
+            <article>
+                <p><strong>Do I need an account for the app?</strong><br> Currently, an account is not needed to access all features within this app</p>
+            </article>
+            <article>
+                <p><strong>Is there a locations map?</strong><br>Vancouver park locations are available within the app, and a visual overview of future park layouts and structures are also included.</p>
+            </article>
+            <article>
+                <p><strong>What is AR/VR?</strong><br> Augmented reality/virtual reality refers to computer generated simulations of the real world. They allow us to present the future features of Vancouver parks without their existence in the present.</p>
+            </article>
+        </section>
+        <!-- More Help -->
+        <section class='faq-help'>
+            <h4>Still Need Help?</h4>
+            <article>
+                <a href="../contact/index.html"><button class="contact-button">Get in Touch</button></a>
+            </article>
+        </section>
+    </div>
 
     <!-- Footer Area -->
-    <div class='austin-footer'>
-        <div class='austin-footer-image'><img src='../img/austin-footer-logo.png'></div>
-        <div class='footer-list-item'></div>
-        <div class='footer-list-item'><a href='../index.html'>Home</a></div>
-        <div class='footer-list-item'><a href='../about/index.html'>About</a></div>
-        <div class='footer-list-item'><a href='../faq/index.html'>Help</a></div>
-        <div class='footer-list-item'><a href='../team/index.html'>Credits</a></div>
-        <div class='footer-list-item'><a href='../casestudy/'>Privacy Policy</a></div>
-    </div>
+    <footer>
+        <img src="../img/parks-logo.jfif">
+        <ul>
+            <a href='../privacypolicy/index.html'><li>Privacy Policy</li></a>
+            <a href='https://www.cityofvancouver.us/parksrec'><li>Parks and Recreation</li></a>
+            <a href='https://www.cityofvancouver.us/parksrec/page/project-play'><li>Project Play</li></a>
+            <a href='http://dtc-wsuv.org/cmdc/'><li>The CMDC</li></a>
+        </ul>
+    </footer>
+</div> 
+
+<script src="../js/scripts.js"></script><!-- Closes Wrapper -->
 </body>
 </html>

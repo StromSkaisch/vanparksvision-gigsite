@@ -1,42 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset='utf-8'>
-
-    <meta name='home' content='home-page' initial-scale='1'>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>VanParksVision</title>
 
     <link type='text/css' rel='stylesheet' href='css/styles.css'>
-    <link type='text/css' rel='stylesheet' href='css/animate.css-master/animate.css'>
+    <link type='text/css' rel='stylesheet' href='css/navigation.css'>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
+</head>    
 
 <body>
-
+<div id="wrapper">
     <!-- Navigation Area -->
     <nav>
-        <ul>
-            <li class='left'><a href='index.html'><img src='vanparkstitle-placeholder'></a></li> <!-- Title Image/Text -->
-            <li><a href='about/index.html'>About</a></li>
-            <li><a href='contact/index.html'>Contact</a></li>
-            <li><a href='download/index.html'>Download</a></li>
+        <div>
+            <a href="index.html"><img id="logo" src="img/logo-horizontal.svg"></a>
+            <img id="mobile-menu-icon" src="img/mobile-menu.svg">
+        </div>
+        <ul id="mobile-menu">
+            <a href='about/index.html'><li>About</li></a>
+            <a href='faq/index.html'><li>FAQ</li></a>
+            <a href='contact/index.html'><li>Contact</li></a>
+            <a href='team/index.html'><li>Team</li></a>
+            <a href='casestudy/index.html'><li>Case Study</li></a>
+            <a href="download/index.html"><li><button class="download-button">Download</button></li></a>
         </ul>
     </nav>
 
     <!-- Header/Hero Unit Area -->
-     <div class='hero-unit'>
-        <div class='hero-content'>
-            <h1></h1>
-        </div>
-    </div>
+    <header>
+        <!-- Hero Mask -->
+        <div></div>
+
+        <!-- Hero Arrow -->
+        <a class="arrow-link" href="#home-content"><svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 438.53 438.53"><defs></defs><title>down-arrow</title><path class="down-arrow" d="M409.13,109.2a218.26,218.26,0,0,0-79.8-79.79Q278.95,0,219.27,0T109.21,29.41a218.26,218.26,0,0,0-79.8,79.79Q0,159.6,0,219.27T29.41,329.33a218.29,218.29,0,0,0,79.8,79.8q50.39,29.4,110.06,29.4t110.06-29.4a218.36,218.36,0,0,0,79.8-79.8q29.4-50.4,29.4-110.06T409.13,109.2Zm-47.4,95.51L232.12,334.32a17.92,17.92,0,0,1-25.7,0L76.8,204.71a17.94,17.94,0,0,1,0-25.7l29.12-29.12a17.92,17.92,0,0,1,25.7,0l87.65,87.65,87.65-87.65a17.91,17.91,0,0,1,25.69,0L361.74,179a17.91,17.91,0,0,1,0,25.7Z"/></svg></a>
+
+        <h1>VanParksVision</h1>
+        <p>Future Parks At Your Fingertips</p>
+        <a class="download-button" href="download/index.html"><button">Download Now</button></a>
+    </header>
 
     <!-- Main Content Area -->
-    <section>
-    </section>
-    <section>
-    </section>
+    <div id="home-content">
+        <!-- About -->
+        <section class="flex-reverse">
+            <img src="img/placeholder.png">
+            <article>
+                <h3>About</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a href="about/index.html"><button class="download-button">Learn More</button></a>
+            </article>
+        </section>
+        <!-- Team -->
+        <section>
+            <img src="img/placeholder.png">
+            <article>
+                <h3>The Team</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a href="team/index.html"><button class="download-button">Meet the Team</button></a>
+            </article>
+        </section>
+        <!-- Case Study -->
+        <section class="flex-reverse">
+            <img src="img/placeholder.png">
+            <article>
+                <h3>Case Study</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a href="casestudy/index.html"><button class="download-button">See More</button></a>
+            </article>
+        </section>
+        <!-- FAQ -->
+        <section>
+            <img src="img/placeholder.png">
+            <article>
+                <h3>FAQ</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a href="faq/index.html"><button class="download-button">More</button></a>
+                <a href="faq/index.html"><button class="download-button">Contact</button></a>
+            </article>
+        </section>
+    </div>
 
     <!-- Footer Area -->
     <footer>
+        <img src="img/parks-logo.jfif">
+        <ul>
+            <a href='privacypolicy/index.html'><li>Privacy Policy</li></a>
+            <a href='https://www.cityofvancouver.us/parksrec'><li>Parks and Recreation</li></a>
+            <a href='https://www.cityofvancouver.us/parksrec/page/project-play'><li>Project Play</li></a>
+            <a href='http://dtc-wsuv.org/cmdc/'><li>The CMDC</li></a>
+        </ul>
     </footer>
+</div> 
+
+<script src="js/scripts.js"></script><!-- Closes Wrapper -->
 </body>
 </html>

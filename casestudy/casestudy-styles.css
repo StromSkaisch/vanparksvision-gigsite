@@ -355,6 +355,9 @@ header .hero-screenshot2 {
 
 /* -- Challenges -- */
 
+#casestudy-content .challenge-section article {
+    padding: 20px;
+}
 
 #casestudy-content .challenge-section div {
     display: flex;
@@ -363,7 +366,8 @@ header .hero-screenshot2 {
     font-size: .7em;
 }
 #casestudy-content .challenge-section img {
-    padding: 20px 20px 60px 20px;
+    padding: 0;
+    max-width: 260px;
 }
 
 #casestudy-content .challenge-section div p {
@@ -411,6 +415,10 @@ header .hero-screenshot2 {
 
 /* -- App Features -- */
 
+#casestudy-content .app-section {
+    padding-bottom: 60px;
+}
+
 #casestudy-content .app-section article {
     display: flex;
     flex-direction: column;
@@ -445,10 +453,6 @@ header .hero-screenshot2 {
 }
 
 @media screen and (min-width: 1094px) {
-
-    #casestudy-content .app-section {
-        height: 100vh;
-    }
 
     #casestudy-content .app-section article {
         display: flex;
@@ -502,10 +506,12 @@ header .hero-screenshot2 {
 
 #casestudy-content .tech-section .tech-article div img {
     padding: 30px 10px 30px 10px;
+    height: auto;
 }
 
 #casestudy-content .tech-section .tech-article div h2 {
     padding: 0px 60px 100px 60px;
+    justify-self: flex-end;
 }
 
 @media screen and (min-width: 1094px) {
@@ -527,6 +533,12 @@ header .hero-screenshot2 {
     #casestudy-content .tech-section .tech-article .extra-margin2 {
        margin-top: 100px;
        padding-bottom: 25px;
+    }
+
+    #casestudy-content .tech-section .tech-article div img {
+        padding: 30px 10px 30px 10px;
+        height: auto;
+        width: 60%;
     }
 }
 /* -- The Architecture -- */
@@ -556,22 +568,27 @@ header .hero-screenshot2 {
 
 /* -- Design Section -- */
 
+#casestudy-content .design-section {
+    padding-bottom: 60px;
+}
+
+#casestudy-content .design-section div {
+    padding: 20px;
+}
+
 #casestudy-content section .design-article img {
     padding: 30px 10px 30px 10px;
+    display: block;
+    margin: 0 auto;
 }
 
 @media screen and (min-width: 1094px) {
-
-    #casestudy-content .design-section {
-        height: 100vh;
-    }
 
     #casestudy-content section .design-article {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        padding-top: 150px;
     }
 }
 

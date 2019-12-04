@@ -416,15 +416,20 @@ header .hero-screenshot2 {
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    padding: 15px 60px;
+}
+
+#casestudy-content .app-section h2 {
+    padding-bottom: 40px;
 }
 
 #casestudy-content .app-section article div {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-content: center;
-    width: 33%;
-    padding: 60px;
+    flex: 0 0 40%;
+    padding: 15px 60px;
 }
 
 #casestudy-content .app-section article div aside {
@@ -531,7 +536,7 @@ header .hero-screenshot2 {
     #casestudy-content section .architecture-article img {
         padding-top: 60px;
         min-width: 250px;
-        width: 60%;
+        width: 40%;
     }
 }
 
@@ -574,6 +579,13 @@ header .hero-screenshot2 {
 
 /* -- Promotions -- */
 
+#casestudy-content .promotions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
 #casestudy-content section .promotions-article {
     background-color: #F0F0F0;
     color: black;
@@ -586,9 +598,13 @@ header .hero-screenshot2 {
         height: 100vh;
     }
 
-    .promotions-article {
-        margin: 13% 7% 8% 25%;
+    #casestudy-content section .promotions-article {
         border-radius: 5px;
+        margin-right: 8%;
+    }
+
+    #casestudy-content section .promotions-article p {
+        width: 950px;
     }
 }
 

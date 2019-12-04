@@ -107,7 +107,7 @@ h3 {
 font-family: 'Tw Cen MT';
 font-style: normal;
 font-weight: bold;
-font-size: 4em;
+font-size: 3.4em;
 line-height: 2;
 }
 
@@ -175,14 +175,12 @@ header h1 {
 	z-index: 1;
 	font-size: 3em;
 	line-height: 1;
-    text-shadow: 3px -3px rgba(0,0,0,.25);
 }
 
 header p {
 	z-index: 1;
 	text-align: center;
 	line-height: 1;
-    text-shadow: 2px -2px rgba(0,0,0,.25);
     margin-bottom: 25%;
 }
 
@@ -269,14 +267,6 @@ header .hero-screenshot2 {
     color: white;
 }
 
-#casestudy-content .introduction {
-    background-image: url('../img/casestudy-intro-bg.png');
-}
-
-#casestudy-content .promotions {
-    background-image: url('../img/casestudy-intro-bg.png');
-}
-
 #casestudy-content .green-bg {
     background-color: #66A340;
 }
@@ -321,7 +311,15 @@ header .hero-screenshot2 {
 
 }
 
-/* Introduction */
+/* -- Introduction -- */
+
+#casestudy-content .introduction {
+    background-image: url('../img/casestudy-intro-bg.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
 
 #casestudy-content section .intro-article {
     background-color: #F0F0F0;
@@ -335,23 +333,43 @@ header .hero-screenshot2 {
         height: 100vh;
     }
 
+    #casestudy-content section .intro-article {
+        margin-left: 8%;
+    }
+
+    #casestudy-content section .intro-article p {
+        width: 950px;
+    }
+
     .intro-article {
-        margin: 17% 25% 10% 7%;
         border-radius: 5px;
     }
 }
 
-/* Challenges */
+/* -- Challenges -- */
 
+#casestudy-content .challenge-section h2 {
+    padding-bottom: 40px;
+}
+
+#casestudy-content .challenge-section h3 {
+    padding: 20px;
+}
+
+#casestudy-content .challenge-section article {
+    padding: 20px;
+}
 
 #casestudy-content .challenge-section div {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    font-size: .7em;
+    justify-content: flex-start;
 }
 #casestudy-content .challenge-section img {
-    padding: 20px 20px 60px 20px;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 260px;
 }
 
 #casestudy-content .challenge-section div p {
@@ -370,16 +388,16 @@ header .hero-screenshot2 {
     #casestudy-content .challenge-section .challenge-div-left {
         text-align: right;
         width: 23%;
-        padding-left: 6%;
     }
 
     #casestudy-content .challenge-section .challenge-div-right {
         text-align: left;
-        width: 33%;
+        width: 23%;
     }
 
     #casestudy-content .challenge-section img {
         padding: 60px;
+        margin: 0;
     }
 
     #casestudy-content .challenge-section div p {
@@ -397,33 +415,42 @@ header .hero-screenshot2 {
 
 }
 
-/* App Features */
+/* -- App Features -- */
+
+#casestudy-content .app-section {
+    padding-bottom: 60px;
+}
 
 #casestudy-content .app-section article {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    padding: 20px;
+}
+
+#casestudy-content .app-section h2 {
+    padding-bottom: 40px;
 }
 
 #casestudy-content .app-section article div {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-content: center;
-    width: 33%;
-    padding: 60px;
+    flex: 0 0 40%;
+    padding: 20px;
 }
 
 #casestudy-content .app-section article div aside {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-content: center;
 }
 
 #casestudy-content .app-section img {
-    padding: 20px;
+    padding: 10px;
     max-width: 86px;
 }
 
@@ -434,13 +461,18 @@ header .hero-screenshot2 {
         flex-direction: row;
         justify-content: center;
         align-content: center;
+        padding: 15px 60px;
+    }
+
+    #casestudy-content .app-section article div {
+        padding: 15px 60px;
     }
 
     #casestudy-content .app-section article div aside {
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        align-content: center;
+        justify-content: flex-start;
+        align-content: flex-end;
     }
 
     #casestudy-content .app-section p {
@@ -450,9 +482,14 @@ header .hero-screenshot2 {
         font-size: 20px;
         line-height: 110%;
         letter-spacing: 0.01em;
+        height: 50%;
+    }
+
+    #casestudy-content .app-section img {
+        padding: 30px 20px;
     }
 }
-/* Tech Stack */
+/* -- Tech Stack -- */
 
 #casestudy-content .tech-section .tech-article {
     display: flex;
@@ -471,10 +508,16 @@ header .hero-screenshot2 {
 
 #casestudy-content .tech-section .tech-article div img {
     padding: 30px 10px 30px 10px;
+    height: auto;
+}
+
+#casestudy-content .tech-section .tech-article div .react-native-img {
+    max-width: 70%;
 }
 
 #casestudy-content .tech-section .tech-article div h2 {
     padding: 0px 60px 100px 60px;
+    justify-self: flex-end;
 }
 
 @media screen and (min-width: 1094px) {
@@ -489,16 +532,22 @@ header .hero-screenshot2 {
     }
 
     #casestudy-content .tech-section .tech-article .extra-margin {
-        margin-top: 100px;
+        margin-top: 99px;
         padding-bottom: 32px;
      }
 
     #casestudy-content .tech-section .tech-article .extra-margin2 {
-       margin-top: 100px;
+       margin-top: 102px;
        padding-bottom: 25px;
     }
+
+    #casestudy-content .tech-section .tech-article div img {
+        padding: 30px 10px 30px 10px;
+        height: auto;
+        width: 60%;
+    }
 }
-/* The Architecture */
+/* -- The Architecture -- */
 
 #casestudy-content section .architecture-article {
     display: flex;
@@ -508,7 +557,7 @@ header .hero-screenshot2 {
 }
 
 #casestudy-content section .architecture-article {
-    padding: 60px 10px 60px 10px;
+    padding: 4% 0;
 }
 
 #casestudy-content section .architecture-article img {
@@ -517,40 +566,45 @@ header .hero-screenshot2 {
 
 @media screen and (min-width: 1094px) {
     #casestudy-content section .architecture-article img {
-        padding-top: 60px;
+        padding-top: 0;
         min-width: 250px;
-        width: 60%;
+        width: 44%;
     }
 }
 
-/* Design Section */
+/* -- Design Section -- */
+
+#casestudy-content .design-section {
+    padding-bottom: 60px;
+}
+
+#casestudy-content .design-section div {
+    padding: 20px;
+}
 
 #casestudy-content section .design-article img {
     padding: 30px 10px 30px 10px;
+    display: block;
+    margin: 0 auto;
 }
 
 @media screen and (min-width: 1094px) {
-
-    #casestudy-content .design-section {
-        height: 100vh;
-    }
 
     #casestudy-content section .design-article {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        padding-top: 150px;
     }
 }
 
-/* Mood Styling */
+/* -- Mood Styling -- */
 
 #casestudy-content .mood-section {
     height: 100vh;
 }
 
-/* Interactive Experience */
+/* -- Interactive Experience -- */
 
 #casestudy-content .interactive-section {
     height: 100vh;
@@ -560,7 +614,15 @@ header .hero-screenshot2 {
     color: black;
 }
 
-/* Promotions */
+/* -- Promotions -- */
+
+#casestudy-content .promotions {
+    background-image: url('../img/casestudy-promotions-bg.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
 
 #casestudy-content section .promotions-article {
     background-color: #F0F0F0;
@@ -574,13 +636,17 @@ header .hero-screenshot2 {
         height: 100vh;
     }
 
-    .promotions-article {
-        margin: 13% 7% 8% 25%;
+    #casestudy-content section .promotions-article {
         border-radius: 5px;
+        margin-right: 8%;
+    }
+
+    #casestudy-content section .promotions-article p {
+        width: 950px;
     }
 }
 
-/* Results */
+/* -- Results -- */
 
 #casestudy-content .results-section article {
     padding-bottom: 0;

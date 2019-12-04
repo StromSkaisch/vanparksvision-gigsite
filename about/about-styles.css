@@ -275,7 +275,7 @@ header .arrow-link:hover .down-arrow {
   	flex-direction: column;
   	text-align: center;
   	font-size: .7em;
-	padding: 60px 20px;
+	  padding: 60px 20px;
 }
 
 #about-content section div p {
@@ -301,11 +301,15 @@ header .arrow-link:hover .down-arrow {
 		padding-left: 15%;
 	}
 
-  	#about-content .phone-examples {
+  #about-content .phone-examples {
 		flex-direction: row;
 		justify-content: center;
-		align-content: center;
- 	}
+    align-content: center;
+   }
+   
+  #about-content section div {
+    min-width: 362px;
+  }
 
 	.flex-reverse {
 		flex-direction: row-reverse !important;

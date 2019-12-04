@@ -416,7 +416,7 @@ header .hero-screenshot2 {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    padding: 15px 60px;
+    padding: 20px;
 }
 
 #casestudy-content .app-section h2 {
@@ -429,35 +429,44 @@ header .hero-screenshot2 {
     justify-content: flex-start;
     align-content: center;
     flex: 0 0 40%;
-    padding: 15px 60px;
+    padding: 20px;
 }
 
 #casestudy-content .app-section article div aside {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-content: center;
 }
 
 #casestudy-content .app-section img {
-    padding: 20px;
+    padding: 10px;
     max-width: 86px;
 }
 
 @media screen and (min-width: 1094px) {
+
+    #casestudy-content .app-section {
+        height: 100vh;
+    }
 
     #casestudy-content .app-section article {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-content: center;
+        padding: 15px 60px;
+    }
+
+    #casestudy-content .app-section article div {
+        padding: 15px 60px;
     }
 
     #casestudy-content .app-section article div aside {
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        align-content: center;
+        justify-content: flex-start;
+        align-content: flex-end;
     }
 
     #casestudy-content .app-section p {
@@ -467,6 +476,11 @@ header .hero-screenshot2 {
         font-size: 20px;
         line-height: 110%;
         letter-spacing: 0.01em;
+        height: 50%;
+    }
+
+    #casestudy-content .app-section img {
+        padding: 30px 20px;
     }
 }
 /* -- Tech Stack -- */
@@ -525,7 +539,7 @@ header .hero-screenshot2 {
 }
 
 #casestudy-content section .architecture-article {
-    padding: 60px 10px 60px 10px;
+    padding: 4% 0;
 }
 
 #casestudy-content section .architecture-article img {
@@ -534,9 +548,9 @@ header .hero-screenshot2 {
 
 @media screen and (min-width: 1094px) {
     #casestudy-content section .architecture-article img {
-        padding-top: 60px;
+        padding-top: 0;
         min-width: 250px;
-        width: 40%;
+        width: 44%;
     }
 }
 

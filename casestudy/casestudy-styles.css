@@ -519,6 +519,7 @@ header .hero-screenshot2 {
     #casestudy-content section .architecture-article img {
         padding-top: 60px;
         min-width: 250px;
+        width: 60%;
     }
 }
 

@@ -107,7 +107,7 @@ h3 {
 font-family: 'Tw Cen MT';
 font-style: normal;
 font-weight: bold;
-font-size: 4em;
+font-size: 3.4em;
 line-height: 2;
 }
 
@@ -267,14 +267,6 @@ header .hero-screenshot2 {
     color: white;
 }
 
-#casestudy-content .introduction {
-    background-image: url('../img/casestudy-intro-bg.png');
-}
-
-#casestudy-content .promotions {
-    background-image: url('../img/casestudy-intro-bg.png');
-}
-
 #casestudy-content .green-bg {
     background-color: #66A340;
 }
@@ -322,6 +314,7 @@ header .hero-screenshot2 {
 /* -- Introduction -- */
 
 #casestudy-content .introduction {
+    background-image: url('../img/casestudy-intro-bg.png');
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -355,6 +348,14 @@ header .hero-screenshot2 {
 
 /* -- Challenges -- */
 
+#casestudy-content .challenge-section h2 {
+    padding-bottom: 40px;
+}
+
+#casestudy-content .challenge-section h3 {
+    padding: 20px;
+}
+
 #casestudy-content .challenge-section article {
     padding: 20px;
 }
@@ -362,10 +363,11 @@ header .hero-screenshot2 {
 #casestudy-content .challenge-section div {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    font-size: .7em;
+    justify-content: flex-start;
 }
 #casestudy-content .challenge-section img {
+    display: block;
+    margin: 0 auto;
     padding: 0;
     max-width: 260px;
 }
@@ -386,16 +388,16 @@ header .hero-screenshot2 {
     #casestudy-content .challenge-section .challenge-div-left {
         text-align: right;
         width: 23%;
-        padding-left: 6%;
     }
 
     #casestudy-content .challenge-section .challenge-div-right {
         text-align: left;
-        width: 33%;
+        width: 23%;
     }
 
     #casestudy-content .challenge-section img {
         padding: 60px;
+        margin: 0;
     }
 
     #casestudy-content .challenge-section div p {
@@ -509,6 +511,10 @@ header .hero-screenshot2 {
     height: auto;
 }
 
+#casestudy-content .tech-section .tech-article div .react-native-img {
+    max-width: 70%;
+}
+
 #casestudy-content .tech-section .tech-article div h2 {
     padding: 0px 60px 100px 60px;
     justify-self: flex-end;
@@ -526,12 +532,12 @@ header .hero-screenshot2 {
     }
 
     #casestudy-content .tech-section .tech-article .extra-margin {
-        margin-top: 100px;
+        margin-top: 99px;
         padding-bottom: 32px;
      }
 
     #casestudy-content .tech-section .tech-article .extra-margin2 {
-       margin-top: 100px;
+       margin-top: 102px;
        padding-bottom: 25px;
     }
 
@@ -611,6 +617,7 @@ header .hero-screenshot2 {
 /* -- Promotions -- */
 
 #casestudy-content .promotions {
+    background-image: url('../img/casestudy-promotions-bg.png');
     display: flex;
     flex-direction: column;
     justify-content: center;

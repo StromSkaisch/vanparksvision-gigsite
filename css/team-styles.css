@@ -35,6 +35,74 @@ header .arrow-link {
 #home-content{
     padding:0px;
 }
+
+
+
+/*ginger's new setup*/
+#content-wrapper {
+    max-width: 80%;
+    margin: 100px auto 30px auto;
+    display: block;
+    text-align: center;
+}
+.headshot {
+    max-width:200px;
+    border-radius:100%;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+}
+.team-profile {
+    min-width: 310px;
+    max-width: 330px;
+    margin: 15px;
+    display: inline-block;
+    padding: 10px 0px 50px 0px;
+}
+.team-profile h4{
+    margin: -10px 0px -15px 0px;
+    font-size: 2.2em;
+}
+.team-profile h4, p{
+    text-align: center;
+}
+
+.team-profile p {
+    font-size: 1.55em;
+    margin: 0 auto;
+    max-width: 280px;
+	height: 50px;
+    text-align: center;
+}
+
+.team-profile button {
+    margin: 0 auto;
+    display: block;
+    position: relative;
+	width: 260px;
+}
+.team-profile img {
+    border-radius: 100%;
+}
+.team-profile ul {
+	font-size: 1.2em;
+	margin: 10px auto 0 auto;
+	line-height: 1.2em;
+	text-align: left;
+	height: 100px;
+	width: 300px;
+}
+
+.team-profile li {
+	list-style: initial;
+	margin-left: 35px;
+	padding-bottom: 3px;
+}
+
+
+
+
+
 /*Main content*/
 .main-bar{
 	max-height: 66px;
@@ -49,9 +117,8 @@ header .arrow-link {
     border-radius:5px;
 }
 .main-bar-text{
-	margin:auto auto auto 3%;
-    grid-area:text;
-
+	margin:auto auto auto 4%;
+	grid-area:text;
 }
 .panel {
 	grid-area: panel;
@@ -62,7 +129,7 @@ header .arrow-link {
     max-width: 475px;
     text-align: center;
     grid-template-columns:1fr 1fr 1fr;
-    grid-template-rows:1fr auto auto auto 40px 1fr;
+    grid-template-rows:1fr auto auto auto auto 1fr;
     grid-template-areas:". title ."
                         ". headshot ."
                         "prev headshot next"
@@ -74,7 +141,6 @@ header .arrow-link {
     grid-area:title;
     font-size: 2em;
     margin:auto;
-    line-height: 1;
 }
 .panel-wrapper{
     height:100% ;
@@ -90,12 +156,12 @@ header .arrow-link {
 .name{
     grid-area:name;
     font-size: 1.5em;
-    
 }
 .portfolio{
     grid-area:portfolio;
     background-color: #66A340;
 	box-shadow: none;
+	padding: 10px 20px;
 	color: white;
 	font-family: Tw Cen MT;
 	font-size: 2em;
@@ -105,8 +171,7 @@ header .arrow-link {
     transition: all .3s ease;
     width: 70%;
     text-align: center;
-    margin: 0 auto 0 auto;
-    max-height: 40px;
+    margin: auto;
 }
 .prev, .next {
     cursor: pointer;
@@ -177,12 +242,8 @@ header .arrow-link {
 }
 @media screen and (min-width: 1094px) {
     .main-bar{
-        grid-template-columns: 39% 2fr 25% 1fr 4% ;
+        grid-template-columns: 41% 2fr 20% 1fr 4% ;
         grid-template-areas: ". text . drop .";
-    }
-    .main-bar-text{
-        margin:auto;
-        text-align: center;
     }
     .panel-wrapper{
         margin:auto;

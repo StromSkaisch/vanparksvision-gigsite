@@ -218,14 +218,14 @@ header .arrow-link:hover .down-arrow {
 header .google {
     position: relative;
     z-index: 1;
-    height: 100px;
+	width: 225px;
+	padding-top: 30px;
 }
 
 header .apple {
     position: relative;
     z-index: 1;
-    width: 100%;
-    height: 75px;
+    width: 200px;
 }
 
 

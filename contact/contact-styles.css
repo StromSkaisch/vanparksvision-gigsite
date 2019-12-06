@@ -106,7 +106,7 @@ h3 {
 font-family: 'Tw Cen MT';
 font-style: normal;
 font-weight: bold;
-font-size: 4em;
+font-size: 3.5em;
 line-height: 2;
 }
 
@@ -248,7 +248,8 @@ header .arrow-link:hover .down-arrow {
 
 #contact-content h3 {
     padding: 0 50px 0 50px;
-    line-height: 1.2;
+	line-height: 1.2;
+	min-width: 400px;
 }
 
 #contact-content section img {

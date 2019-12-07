@@ -12,35 +12,39 @@ nav {
 	z-index: 999;
 }
 
-nav div {
+nav #nav-bar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
 	display: flex; 
 	flex-direction: row;
 	justify-content: space-between;
-	padding: 0px 20px 0px 0px;
 	align-items: center;
 	background-color: white;
 	z-index: 1;
 }
 
-nav div a {
+nav #nav-bar a {
 	justify-content: flex-start;
 }
 
-nav #mobile-menu-icon  {
-	width: 50px;
-	cursor: pointer;
+#nav-menu {
+	position: relative;
+	top: 150px;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	transition: color .3s ease;
+	z-index: 0;
+	display: none;
 }
 
-nav ul {
+nav #nav-menu-icon  {
 	position: absolute;
-	top: 100%;
-	display: none;
-	flex-direction: column;
-	width: 100%;
-	background-color: #F8F8F8;
-	z-index: 0;
-	height: 90vh;
-	padding-top: 40px;
+	right: 30px;
+	width: 50px;
+	cursor: pointer;
 }
 
 nav a {
@@ -50,7 +54,6 @@ nav a {
 	padding: 15px 40px 15px 0px;
 	font-family: Tw Cen MT;
 	font-size: 2.75em;
-	transition: color .3s ease;
 }
 
 nav a:hover {
@@ -71,7 +74,15 @@ nav a:last-of-type {
 		padding: 35px 0px 35px 0px;
 	}
 
-	nav #mobile-menu-icon {
+	#nav-menu {
+		position: relative;
+		top: 0px;
+		height: auto;
+		display: flex;
+		flex-direction: row;
+	}
+
+	nav #nav-menu-icon {
 		display: none;
 	}
 
@@ -80,16 +91,6 @@ nav a:last-of-type {
 		left: 30px;
 		top: 7px;
 		width: 325px;
-	}
-
-	nav ul {
-		display: flex;
-		position: relative;
-		height: auto;
-		width: auto;
-		flex-direction: row;
-		background-color: inherit;
-		padding-top: 0;
 	}
 
 	nav a {

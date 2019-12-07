@@ -17,17 +17,17 @@
 <div id="wrapper">
     <!-- Navigation Area -->
     <nav>
-        <div>
+        <div id="nav-bar">
             <a href="index.html"><img id="logo" src="img/logo-horizontal.svg"></a>
-            <img id="mobile-menu-icon" src="img/mobile-menu.svg">
+            <img id="nav-menu-icon" src="img/nav-menu.svg">
         </div>
-        <ul id="mobile-menu">
-            <a href='about/index.html'><li>About</li></a>
-            <a href='faq/index.html'><li>FAQ</li></a>
-            <a href='contact/index.html'><li>Contact</li></a>
-            <a href='team/index.html'><li>Team</li></a>
-            <a href='casestudy/index.html'><li>Case Study</li></a>
-            <a href="download/index.html"><li><button class="download-button">Download</button></li></a>
+        <div id="nav-menu">
+            <a href='about/index.html'>About</a>
+            <a href='faq/index.html'>FAQ</a>
+            <a href='contact/index.html'>Contact</a>
+            <a href='team/index.html'>Team</a>
+            <a href='casestudy/index.html'>Case Study</a>
+            <a href="download/index.html"><button class="download-button">Download</button></a>
         </ul>
     </nav>
 
@@ -56,7 +56,9 @@
     <div id="home-content">
         <!-- About -->
         <section class="flex-reverse">
-            <img src="img/placeholder.png">
+            <div id="about-video">
+                <iframe width="x" height="y" src="https://www.youtube.com/embed/u58BKRZdWmc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
             <article>
                 <h3>About</h3>
                 <p>VanParksVision is a mobile app that uses augmented reality to reimagine upcoming Vancouver, Washington parks. The app showcases the changes coming to Vancouver parks and provides information helpful to guests, such as hours, amenities, and accessibility features. Designed to be used by all ages and abilities, the app is interactive, informative, and innovative.</p>
@@ -83,7 +85,7 @@
         </section>
         <!-- FAQ -->
         <section>
-            <img src="img/two_leaf_motif.png">
+            <img id="leaves" src="img/two_leaf_motif.png">
             <article>
                 <h3>FAQ</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>

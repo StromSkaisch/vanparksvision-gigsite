@@ -180,6 +180,19 @@ header div {
 	z-index: 1;
 }
 
+/* Youtube video hosting */
+.videoContainer {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	z-index: 0;
+}
+
 header h1 {
 	z-index: 2;
 	font-size: 3em;
@@ -215,19 +228,12 @@ header .arrow-link:hover .down-arrow {
 	fill: #3573B3;
 }
 
-/* Youtube video hosting */
-.videoContainer {
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	overflow: hidden;
-	z-index: 0;
+header img {
+	position: absolute;
+	top: 0px;
+	x-index: 1;
 }
-/*#hero may need to be removed if it interferes too much with other elements*/
+
 #hero {
 	position: relative;
 }
@@ -238,14 +244,10 @@ iframe {
 }
 
 
-
-/*If we go ahead with embeding a video in the hero of the homepage we may need to remove the background-image property below
-*/
 @media screen and (min-width: 1094px) {
 	header {
 		height: 100vh;
 		width: 100%;
-		background-image: url(../img/home-hero.png);
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -254,6 +256,10 @@ iframe {
 	header h1 {
 		font-size: 5em;
 		letter-spacing: 1px;
+	}
+
+	.videoContainer {
+		display: flex;
 	}
 }
 
@@ -270,22 +276,46 @@ iframe {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	margin: 100px auto;
+	margin: 125px auto;
 }
 
-#home-content section img {
+#home-content section img,#about-video {
 	align-self: center;
-	width: 100%;
+	width: 45%;
 }
 
 #home-content section article {
 	font-size: .7em;
 	padding: 60px;
+	width: 65%;
 }
 
 #home-content section article button {
 	margin-top: 25px;
 	font-size: 2em;
+}
+
+#home-content #about-video {
+	position: relative;
+    width: 45%;
+    height: 0;
+    padding-bottom: 21%;
+}
+
+#home-content iframe {
+	position: absolute;
+    top: 0;
+    left: 0;
+	width: 100%;
+	border-radius: 25px;
+}
+
+#home-content img {
+	max-width: 100%;
+}
+
+#home-content #leaves {
+	width: 20%;
 }
 
 #home-footer {

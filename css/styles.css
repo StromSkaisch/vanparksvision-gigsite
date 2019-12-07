@@ -232,7 +232,7 @@ header .arrow-link:hover .down-arrow {
 	position: relative;
 }
 
-iframe {
+header iframe {
 	width: 100%;
 	height: 100%
 }
@@ -273,6 +273,22 @@ iframe {
 	margin: 100px auto;
 }
 
+.youtube-embed {
+	position: relative;
+	padding-bottom: 56%;
+	width: 100%;
+	text-align: left;
+	padding-top: 90px;
+  }
+  
+  .youtube-embed iframe {
+	width: 100%;
+	position: absolute;
+	height: 100%;
+	overflow: hidden;
+	max-height: 420px;
+  }
+
 #home-content section img {
 	align-self: center;
 	width: 100%;
@@ -298,6 +314,16 @@ iframe {
 	#home-content section {
 		flex-direction: row;
 		width: 80%;
+	}
+
+	.youtube-embed {
+		padding-bottom: 0;
+		min-width: 40%;
+	  }
+
+	#home-content section img {
+		width: 40%;
+		max-height: 380px;
 	}
 
 	.flex-reverse {

@@ -232,14 +232,14 @@ header .arrow-link:hover .down-arrow {
 header img {
 	position: absolute;
 	top: 0px;
-	x-index: 1;
+	z-index: 1;
 }
 
 #hero {
 	position: relative;
 }
 
-iframe {
+header iframe {
 	width: 100%;
 	height: 100%
 }
@@ -283,6 +283,11 @@ iframe {
 #home-content section img,#about-video {
 	align-self: center;
 	width: 45%;
+}
+
+#home-content section .leaf-motif {
+	max-height: 380px;
+	max-width: 331px;
 }
 
 #home-content section article {
@@ -329,6 +334,15 @@ iframe {
 	#home-content section {
 		flex-direction: row;
 		width: 80%;
+	}
+
+	.youtube-embed {
+		padding-bottom: 0;
+		min-width: 40%;
+	  }
+
+	#home-content section img {
+		width: 40%;
 	}
 
 	.flex-reverse {

@@ -92,6 +92,7 @@ font-style: normal;
 font-weight: bold;
 font-size: 7.5em;
 line-height: 2;
+text-shadow: -4px 4px 4px rgba(0, 0, 0, 0.35);
 }
 
 h2 {

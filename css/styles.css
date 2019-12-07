@@ -294,6 +294,11 @@ header iframe {
 	width: 100%;
 }
 
+#home-content section .leaf-motif {
+	max-height: 380px;
+	max-width: 331px;
+}
+
 #home-content section article {
 	font-size: .7em;
 	padding: 60px;
@@ -323,7 +328,6 @@ header iframe {
 
 	#home-content section img {
 		width: 40%;
-		max-height: 380px;
 	}
 
 	.flex-reverse {

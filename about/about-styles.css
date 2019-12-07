@@ -288,7 +288,8 @@ header .arrow-link:hover .down-arrow {
 
 #about-content section .leaf-motif-frame {
 	max-width: 260px;
-	margin-left: 10%;
+	margin-left: 7%;
+	padding-bottom: 8%;
 }
 
 @media screen and (min-width: 1094px) {
@@ -296,10 +297,6 @@ header .arrow-link:hover .down-arrow {
 		flex-direction: row;
 		width: 80%;
 	  }
-	
-	.leaf-motif-frame {
-		padding-left: 15%;
-	}
 
   #about-content .phone-examples {
 		flex-direction: row;
@@ -316,6 +313,6 @@ header .arrow-link:hover .down-arrow {
 	}
 
 	#about-content section .leaf-motif-frame {
-		max-width: 180px;
+		max-width: 300px;
 	}
 }

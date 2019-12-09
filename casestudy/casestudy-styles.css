@@ -1,13 +1,177 @@
+/* Universal */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+button:focus {
+	outline: none;
+}
+
+button:active {
+	outline: none;
+}
+
+/*End of reset*/
+
+@font-face {
+	font-family: 'Tw Cen MT';
+	src: url(../fonts/twcent.TTF);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+
+/* --Body Copy-- */
+body {
+    font-size: 16px;
+    font-family: 'Didact Gothic';
+    letter-spacing: .5px;
+}
+
+p {	
+font-style: normal;
+font-weight: normal;
+font-size: 2em;
+line-height: 1.75em;
+letter-spacing: .5px; 
+}
+
+/* --Headings-- */
+h1 {
+font-family: 'Tw Cen MT';
+font-style: normal;
+font-weight: bold;
+font-size: 7.5em;
+line-height: 2;
+text-shadow: -4px 4px 4px rgba(0, 0, 0, 0.35);
+}
+
+h2 {
+font-family: 'Tw Cen MT';
+font-style: normal;
+font-weight: bold;
+font-size: 3.5em;
+line-height: 2;
+}
+
+h3 {
+font-family: 'Tw Cen MT';
+font-style: normal;
+font-weight: bold;
+font-size: 3em;
+line-height: 2;
+}
+
+h4 {
+font-family: 'Tw Cen MT';
+font-style: normal;
+font-weight: bold;
+font-size: 2.5em;
+line-height: 2;
+}
+
+h5 {
+font-family: 'Tw Cen MT';
+font-style: normal;
+font-weight: bold;
+font-size: 2em;
+line-height: 2;
+}
+
+a {
+font-weight: bold;
+text-decoration: none;
+color: inherit;
+}
+
+a:visited {
+color: inherit;
+}
+
+.download-button {
+	background-color: #66A340;
+	box-shadow: none;
+	padding: 10px 20px;
+	color: white;
+	font-family: Tw Cen MT;
+	font-size: 1em;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	transition: all .3s ease;
+}
+
+.download-button:hover {
+	background-color: #3573B3;
+}
+
+strong {
+    font-family: 'Tw Cen MT';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1.4em;
+	line-height: 1.2em;
+}
 
 /* -- Hero Unit/Header -- */
 header {
+    position: relative;
 	height: 100vh;
 	width: 100%;
 	background-color: #004883;
 	background-size: cover;
-	background-position: -300px;
+	z-index: -300;
 	background-repeat: no-repeat;
-	background-attachment: fixed;
+    background-attachment: fixed;
+    background-image: none;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -43,41 +207,53 @@ header .arrow-link {
 }
 
 header .down-arrow {
-	fill: white;
+	fill: #3573B3;
 	transition: fill .3s ease;
 }
 
 header .arrow-link:hover .down-arrow {
-	fill: #3573B3;
+	fill: white;
 }
 
 header .casestudy-logo {
     position: absolute;
-    z-index: -250px;
+    z-index: -250;
     bottom: 0;
     max-width: 100%;
 }
 
 header .hero-screenshot {
     position: absolute;
-    z-index: -200px;
-    bottom: 0;
-    left: 15%;
-    max-width: 50%;
+    z-index: -200;
+    bottom: -25%;
+    left: 12%;
+    max-width: 333px;
+    width: 50%;
 }
 
 header .hero-screenshot2 {
     position: absolute;
-    z-index: -150px;
-    bottom: 0;
-    left: 35%;
-    max-width: 50%;
+    z-index: -150;
+    bottom: -12%;
+    left: 37%;
+    max-width: 333px;
+    width: 50%;
+}
+
+@media screen and (min-width: 730px) {
+    header .hero-screenshot {
+        left: 22%;
+    }
+
+    header .hero-screenshot2 {
+        left: 40%;
+    }
 }
 
 @media screen and (min-width: 1094px) {
 	header {
 		height: 100vh;
-		width: 100%;
+        width: 100%;
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -89,10 +265,12 @@ header .hero-screenshot2 {
     }
     
     header .hero-screenshot {
-        left: 32%;
+        max-width: 333px;
+        left: 33%;
     }
 
     header .hero-screenshot2 {
+        max-width: 333px;
         left: 45%;
     }
 }
@@ -127,6 +305,7 @@ header .hero-screenshot2 {
 #casestudy-content section h2 {
     text-align: center;
     line-height: 1.2em;
+    padding: 60px;
 }
 
 #casestudy-content section img {
@@ -201,7 +380,7 @@ header .hero-screenshot2 {
 }
 
 #casestudy-content .challenge-section article {
-    padding: 20px;
+    padding: 40px;
 }
 
 #casestudy-content .challenge-section div {
@@ -393,6 +572,10 @@ header .hero-screenshot2 {
 }
 /* -- The Architecture -- */
 
+#casestudy-content .architecture-section h2 {
+    overflow: hidden;
+}
+
 #casestudy-content section .architecture-article {
     display: flex;
     flex-direction: column;
@@ -419,7 +602,11 @@ header .hero-screenshot2 {
 /* -- Design Section -- */
 
 #casestudy-content .design-section {
-    padding-bottom: 60px;
+    padding-bottom: 0px;
+}
+
+#casestudy-content .design-section h2 {
+    padding-bottom: 0px;
 }
 
 #casestudy-content .design-section div {
@@ -444,8 +631,31 @@ header .hero-screenshot2 {
 
 /* -- Mood Styling -- */
 
-#casestudy-content .mood-section {
-    height: 100vh;
+#casestudy-content section .mood-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#casestudy-content section .mood-article {
+    padding: 2% 0;
+}
+
+#casestudy-content .mood-section h2 {
+    padding-bottom: 0;
+}
+
+#casestudy-content section .mood-article img {
+    border-radius: 50px;
+    padding: 0;
+}
+
+@media screen and (min-width: 1094px) {
+    #casestudy-content section .mood-article img {
+        padding-top: 0;
+        width: 70%;
+    }
 }
 
 /* -- Interactive Experience -- */
@@ -492,6 +702,17 @@ header .hero-screenshot2 {
 
 /* -- Results -- */
 
+#casestudy-content .results-section .results-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#casestudy-content .results-section h2 {
+    padding-bottom: 0;
+}
+
 #casestudy-content .results-section article {
     padding-bottom: 0;
 }
@@ -504,9 +725,13 @@ header .hero-screenshot2 {
     padding-bottom: 25px;
 }
 
+#casestudy-content .results-section div {
+    text-align: center;
+}
+
 #casestudy-content .results-section img {
-	align-self: center;
-	padding: 20px;
+    padding: 10px;
+    margin: 0 auto;
 }
 
 @media screen and (min-width: 1094px) {
@@ -518,9 +743,6 @@ header .hero-screenshot2 {
 }
 
     #casestudy-content .results-section .results-article {
-        display: flex;
         flex-direction: row;
-        align-items: center;
-        justify-content: center;
     }
 }

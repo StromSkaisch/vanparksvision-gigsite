@@ -64,10 +64,15 @@ button:active {
 	src: url(../fonts/twcent.TTF);
 }
 
-html {
-	scroll-behavior: smooth;
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
-
 
 /* --Body Copy-- */
 body {
@@ -168,7 +173,6 @@ header {
 	width: 100%;
 	background-color: #004883;
 	background-size: cover;
-	z-index: -300;
 	background-repeat: no-repeat;
     background-attachment: fixed;
     background-image: none;
@@ -176,7 +180,7 @@ header {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	color: white;
+    color: white;
 }
 
 header h1 {
@@ -200,32 +204,32 @@ header .download-button {
 }
 
 header .arrow-link {
-	position: absolute;
-	z-index: 1;
 	width: 50px;
 	bottom: 50px;
 }
 
+header .arrow-link {
+    position: absolute;
+}
+
 header .down-arrow {
-	fill: #3573B3;
+	fill: #66A340;
 	transition: fill .3s ease;
 }
 
 header .arrow-link:hover .down-arrow {
-	fill: white;
+	fill: #004883;
 }
 
 header .casestudy-logo {
     position: absolute;
-    z-index: -250;
     bottom: 0;
     max-width: 100%;
 }
 
 header .hero-screenshot {
     position: absolute;
-    z-index: -200;
-    bottom: -25%;
+    bottom: -20%;
     left: 12%;
     max-width: 333px;
     width: 50%;
@@ -233,7 +237,6 @@ header .hero-screenshot {
 
 header .hero-screenshot2 {
     position: absolute;
-    z-index: -150;
     bottom: -12%;
     left: 37%;
     max-width: 333px;
@@ -337,11 +340,14 @@ header .hero-screenshot2 {
 /* -- Introduction -- */
 
 #casestudy-content .introduction {
+    position: relative;
+    z-index: 1;
     background-image: url('../img/casestudy-intro-bg.png');
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+
 }
 
 #casestudy-content section .intro-article {
@@ -572,10 +578,6 @@ header .hero-screenshot2 {
 }
 /* -- The Architecture -- */
 
-#casestudy-content .architecture-section h2 {
-    overflow: hidden;
-}
-
 #casestudy-content section .architecture-article {
     display: flex;
     flex-direction: column;
@@ -639,7 +641,7 @@ header .hero-screenshot2 {
 }
 
 #casestudy-content section .mood-article {
-    padding: 2% 0;
+    padding: 60px 0;
 }
 
 #casestudy-content .mood-section h2 {
@@ -647,14 +649,15 @@ header .hero-screenshot2 {
 }
 
 #casestudy-content section .mood-article img {
-    border-radius: 50px;
+    border-radius: 40px;
     padding: 0;
+    width: 100%;
 }
 
 @media screen and (min-width: 1094px) {
     #casestudy-content section .mood-article img {
-        padding-top: 0;
-        width: 70%;
+        margin-bottom: 60px;
+        width: 75%;
     }
 }
 

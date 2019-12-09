@@ -66,13 +66,11 @@ button:active {
 
 html {
 	scroll-behavior: smooth;
-	overflow: hidden;
 }
 
 
 /* --Body Copy-- */
 body {
-	overflow: hidden;
 	font-size: 16px;
 	font-family: 'Didact Gothic';
 	letter-spacing: .5px;

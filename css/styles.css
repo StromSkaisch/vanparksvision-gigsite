@@ -321,6 +321,7 @@ header iframe {
 
 #home-content img {
 	max-width: 100%;
+	border-radius: 25px;
 }
 
 #home-content #leaves {

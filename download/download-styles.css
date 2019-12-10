@@ -255,7 +255,9 @@ header .apple {
 
 /* -- Home Content -- */
 #download-content {
+	position: absolute;
 	padding: 50px 0px;
+	z-index: 1;
 }
 
 #download-content section {
@@ -303,4 +305,8 @@ header .apple {
 	.flex-reverse {
 		flex-direction: row-reverse !important;
 	}
+}
+
+#download-footer {
+	padding: 15px;;
 }

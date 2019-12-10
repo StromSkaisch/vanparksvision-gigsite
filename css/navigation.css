@@ -47,6 +47,10 @@ nav #nav-menu-icon  {
 	cursor: pointer;
 }
 
+nav #logo {
+	width: 100%;
+}
+
 nav a {
 	display: flex;
 	align-items: center;
